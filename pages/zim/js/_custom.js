@@ -76,7 +76,6 @@
 <!-- Initialize Swiper -->
 var mainSwiper = new Swiper('.swiper-container.main', {
 
-
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -86,17 +85,15 @@ var mainSwiper = new Swiper('.swiper-container.main', {
     breakpoints: {
         320: {
             slidesPerView: 1,
-            spaceBetween: 20
-        },
-        // when window width is >= 480px
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        // when window width is >= 640px
-        960: {
-            slidesPerView: 3,
             spaceBetween: 40
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+        865: {
+            slidesPerView: 3,
+            spaceBetween: 50
         },
         1200: {
             slidesPerView: 4,
@@ -107,7 +104,6 @@ var mainSwiper = new Swiper('.swiper-container.main', {
 
 var aboutSwiper = new Swiper('.swiper-container.about', {
 
-
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -115,19 +111,17 @@ var aboutSwiper = new Swiper('.swiper-container.about', {
     slidesPerView: 4,
     spaceBetween: 30,
     breakpoints: {
-        320: {
+        3320: {
             slidesPerView: 1,
-            spaceBetween: 20
-        },
-        // when window width is >= 480px
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        // when window width is >= 640px
-        960: {
-            slidesPerView: 3,
             spaceBetween: 40
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+        865: {
+            slidesPerView: 3,
+            spaceBetween: 50
         },
         1200: {
             slidesPerView: 4,
@@ -136,11 +130,41 @@ var aboutSwiper = new Swiper('.swiper-container.about', {
     }
 });
 
-//=== NAV BAR MENU
-$('[data-toggle-menu]').click(function () {
-    // console.log('lol');
-    $('.menu-mobile').toggleClass('active');
+// === NAV BAR MENU
+$(function() {
+    $("[data-toggle-menu]").click(function() {
+        $(this).toggleClass("active");
+        $('.menu-mobile').toggleClass("active");
+        $('.wrapper').toggleClass('body-stop');
+        $('#overlay').toggleClass('active');
+    });
 });
+
+// function initialHash() {
+//     'use strict';
+//     window.location.href = "#";
+// }
+//
+// function handleTouch(e) {
+//     var x = e.changedTouches[0].clientX;
+//     var total = this.clientWidth;
+//     var position = x - total;
+//     if ( position < 0 ) this.style.left = (x-total) + 'px'
+//     else if (position >= 0) this.style.left = 0 + 'px'
+// }
+// function handleTouchEnd(e) {
+//     var x = e.changedTouches[0].clientX;
+//     var total = this.clientWidth;
+//     var position = x - total;
+//     this.style.left = "";
+//     if ( position <= -total*0.5 ) initialHash();
+// }
+// document.querySelector('#nav').addEventListener('touchstart', handleTouch, false)
+// document.querySelector('#nav').addEventListener('touchmove', handleTouch, false)
+// document.querySelector('#nav').addEventListener('touchend', handleTouchEnd, false)
+// document.getElementById('nav_modal').addEventListener('click', initialHash, false);
+
+
 
 
 $('.md-select').on('click', function () {
