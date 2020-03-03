@@ -211,7 +211,12 @@
                     </select>
                 </li>
 
-                <li class="filters-block__item"></li>
+                <li class="filters-block__item">
+                    <label style="display: none;" class="filters-block__item-label" for="amount">Price range:</label>
+                    <input style="display: none;" type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+
+                    <div style="display: none;" id="slider-range"></div>
+                </li>
 
                 <li class="filters-block__item">
                     <label class="filters-block__item-label" for="status">Статус об’єкту</label>
@@ -232,7 +237,7 @@
     </header>
 
     <main class="content content--commercial-page">
-        <section class="content__item card-container card-container--projects-page">
+        <section class="content__item card-container card-container--projects-page card-container--commercial-page">
             <div class="card-container__inner">
                 <h2 class="card-container__caption">
                     Житлові комплекси
@@ -328,7 +333,7 @@
                 </ul>
             </div>
         </section>
-        <section style="display: none;" class="content__item card-container card-container--projects-page">
+        <section class="content__item card-container card-container--projects-page card-container--commercial-page">
             <div class="card-container__inner">
                 <h2 class="card-container__caption">
                     Бізнес центри
@@ -424,25 +429,21 @@
                 </ul>
             </div>
         </section>
-        <section style="display: none;" class="content__item card-container card-container--projects-page">
+        <section class="content__item card-container card-container--projects-page">
             <div class="card-container__inner">
-                <h2 class="card-container__caption">
+                <h2 class="card-container__caption card-container__caption--not-residential">
                     Нежитлові приміщення
                 </h2>
 
                 <ul class="card-container__list">
-                    <li class="card-container__item">
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
                         <a href="#" class="card-container__link">
                             <div class="card card--not-residential">
-
-                                <a class="card__link" href="#">Forest Park</a>
-
-                                <div class="card__preview">
-                                    <div class="card__img-wrap">
-                                        <img src="../img/commercial-page/ex-1.jpg"
-                                             alt="">
-                                    </div>
-
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
                                 </div>
 
                                 <ul class="card__feature-list">
@@ -453,10 +454,9 @@
                                         <span class="card__feature-value">
                                             40
                                             <span class="card__feature-sup-value">
-                                                m <sup>2</sup>
+                                                м <sup>2</sup>
                                             </span>
                                         </span>
-
                                     </li>
 
                                     <li class="card__feature-item">
@@ -466,68 +466,566 @@
                                         <span class="card__feature-value">
                                             Оболонський
                                         </span>
+                                    </li>
 
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
                                     </li>
                                 </ul>
-
                             </div>
                         </a>
                     </li>
 
-                    <li class="card-container__item">
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
                         <a href="#" class="card-container__link">
                             <div class="card card--not-residential">
-                                <div class="card__preview">
-                                    <div class="card__img-wrap">
-                                        <img src="../img/residential-block/ex2.jpg"
-                                             alt="">
-                                    </div>
-
-                                    <span class="card__date status-active">
-										У продажу
-									</span>
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
                                 </div>
 
-                                <h3 class="card__caption">
-                                    ЖК Parkland
-                                </h3>
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
 
-                                <div class="card__date-wrap">
-                                    <span class="card__address">
-                                        Героїв Дніпра
-                                    </span>
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
 
-                                    <span class="card__price">від <strong>30 000</strong> грн/м2</span>
-                                </div>
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
                         </a>
                     </li>
 
-                    <li class="card-container__item">
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
                         <a href="#" class="card-container__link">
-                            <div class="card">
-                                <div class="card__preview">
-                                    <div class="card__img-wrap">
-                                        <img src="../img/residential-block/ex3.jpg"
-                                             alt="">
-                                    </div>
-
-                                    <span class="card__date status-active">
-										У продажу
-									</span>
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
                                 </div>
 
-                                <h3 class="card__caption">
-                                    ЖК Parkland
-                                </h3>
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
 
-                                <div class="card__date-wrap">
-                                    <span class="card__address">
-                                        Іподром
-                                    </span>
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
 
-                                    <span class="card__price">від <strong>19 000</strong> грн/м2</span>
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
+                        <a href="#" class="card-container__link">
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
                                 </div>
+
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
+                        <a href="#" class="card-container__link">
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
+                                </div>
+
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
+                        <a href="#" class="card-container__link">
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
+                                </div>
+
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
+                        <a href="#" class="card-container__link">
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
+                                </div>
+
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
+                        <a href="#" class="card-container__link">
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
+                                </div>
+
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
+                        <a href="#" class="card-container__link">
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
+                                </div>
+
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
+                        <a href="#" class="card-container__link">
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
+                                </div>
+
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-container__item card-container__item--not-residential">
+                        <a class="card__link" href="#">Forest Park</a>
+
+                        <a href="#" class="card-container__link">
+                            <div class="card card--not-residential">
+                                <div class="card__img-wrap">
+                                    <img src="../img/commercial-page/ex-1.jpg"
+                                         alt="">
+                                </div>
+
+                                <ul class="card__feature-list">
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Площа
+                                        </span>
+                                        <span class="card__feature-value">
+                                            40
+                                            <span class="card__feature-sup-value">
+                                                м <sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Район
+                                        </span>
+                                        <span class="card__feature-value">
+                                            Оболонський
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-label">
+                                            Кількість жильців
+                                        </span>
+                                        <span class="card__feature-value">
+                                            8000+
+                                        </span>
+                                    </li>
+
+                                    <li class="card__feature-item">
+                                        <span class="card__feature-value">
+                                            17 000
+                                            <span class="card__feature-label">
+                                                грн / м<sup>2</sup>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
                         </a>
                     </li>
@@ -535,24 +1033,23 @@
             </div>
         </section>
 
-
-        <div class="">
-            <a href="#" style="padding: 1rem; display: block; background-color: #ccc;">
-
-                <a href="#">lolo</a>
-
-                <span class="">
-
+        <section class="pagination">
+            <button class="pagination__btn">
+                <span class="icon icon-loader"></span>
+                Ще
+                <span class="pagination__btn-number">
+                    20
                 </span>
+                планувань
+            </button>
 
-                <ul>
-                    <li>lolor</li>
-                    <li>lolor</li>
-                    <li>lolor</li>
-                    <li>lolor</li>
-                </ul>
-            </a>
-        </div>
+            <p class="pagination__text">
+                <span>Показано</span>
+                <span>15</span>
+                <span>планувань з</span>
+                <span>2459</span>
+            </p>
+        </section>
     </main>
 
     <footer class="footer">
@@ -657,6 +1154,20 @@
         $("#location").selectmenu();
         $("#status").selectmenu();
         $('#assignment').selectmenu();
+    });
+
+    $(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [75, 300],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
     });
 </script>
 </body>
