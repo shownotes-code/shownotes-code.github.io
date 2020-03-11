@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>404</title>
+    <title>Contacts page</title>
+
+    <meta name="description" content="">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -118,7 +120,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="commercial-page.html">
+                        <a class="nav-bar__link" href="404.html">
                             Комерційна нерухомість
                         </a>
                     </li>
@@ -168,27 +170,121 @@
             </div>
         </div>
     </header>
-    <main class="content content--not-found">
-        <div class="not-found">
-            <div class="not-found__content">
-                404
+
+    <main>
+        <section class="contacts contacts--is-page">
+            <div class="contacts__inner">
+                <h2 class="contacts__caption">
+                    Контакти
+                </h2>
+
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <span class="contacts__item-label">Адреса офісу</span>
+                        <span class="contacts__item-content">м. Київ, перевулок Охтирський, будинок 7, корпус 3, офіс 3-101</span>
+                    </li>
+                    <li class="contacts__item">
+                        <span class="contacts__item-label">Телефон</span>
+                        <span class="contacts__item-content">(067) 466 28 38</span>
+                    </li>
+                    <li class="contacts__item">
+                        <span class="contacts__item-label">Email</span>
+                        <span class="contacts__item-content">office.zcg@ukr.net</span>
+                    </li>
+                    <li class="contacts__item">
+                        <span class="contacts__item-label">Відділ маркетингу</span>
+                        <span class="contacts__item-content">marketing@zim-capital.com</span>
+                    </li>
+                </ul>
+
+                <div class="contacts__container">
+                    <div class="contacts__form">
+                        <form action="">
+                            <div class="contacts__form-label-wrap">
+                                <label class="contacts__form-label">
+                                    <span class="contacts__form-label-text">Номер телефону*</span>
+                                    <input class="contacts__form-input" type="text">
+                                </label>
+
+                                <div class="validation-block"></div>
+                            </div>
+
+                            <div class="contacts__form-label-wrap">
+                                <label class="contacts__form-label">
+                                    <span class="contacts__form-label-text">Повiдомлення</span>
+                                    <textarea class="contacts__form-textarea" name="" cols="30" rows="10"></textarea>
+                                </label>
+                            </div>
+
+                            <button class="contacts__form-btn" type="submit">
+                                Надіслати
+                            </button>
+                        </form>
+
+                        <p class="privacy-policy">Натискаючи кнопку “Надіслати” ви даєте згоду на обробку персональних
+                            даних згідно з нашою
+                            <a class="privacy-policy__link" href="#">політикою конфіденційности</a>
+                        </p>
+                    </div>
+                    <div class="contacts__map">
+                        <div class="contacts__map-inner">
+
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section class="more-contacts">
+            <div class="more-contacts__inner">
+                <h2 class="more-contacts__caption">
+                    Більше контактів
+                </h2>
 
-            <div class="not-found__description">
-                <h1 class="not-found__description-title">Цю сторінку не побудовано</h1>
+                <span class="more-contacts__text">
+                    Оберіть відділ, з яким вам потрібно зв’язатися
+                </span>
 
-                <p class="not-found__description-text">
-                    Сторінки, яку ви шукаєте, не існує або перенесено на іншу адресу. Поверніться на
-                    <a class="not-found__description-link" href="../index.html">головну сторінку</a>
-                    головну сторінку або скористайтесь меню сайта
-                </p>
-
-                <a class="not-found__btn" href="../index.html">
-                    Повернутись на головну
-                </a>
+                <ul class="more-contacts__list">
+                    <li class="more-contacts__item">
+                        <button class="more-contacts__btn">
+                            Відділи продажу
+                        </button>
+                    </li>
+                    <li class="more-contacts__item">
+                        <button class="more-contacts__btn">
+                            Відділ комерційної нерухомості
+                        </button>
+                    </li>
+                    <li class="more-contacts__item">
+                        <button class="more-contacts__btn">
+                            Відділ постачання
+                        </button>
+                    </li>
+                    <li class="more-contacts__item">
+                        <button class="more-contacts__btn">
+                            Бухгалтерія
+                        </button>
+                    </li>
+                    <li class="more-contacts__item">
+                        <button class="more-contacts__btn">
+                            Кошторисний відділ
+                        </button>
+                    </li>
+                    <li class="more-contacts__item">
+                        <button class="more-contacts__btn">
+                            Архітектурний відділ
+                        </button>
+                    </li>
+                    <li class="more-contacts__item">
+                        <button class="more-contacts__btn">
+                            Я не знаю, з яким відділом зв’язатись
+                        </button>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="footer__inner">
             <nav class="nav-bar nav-bar--footer">
@@ -283,7 +379,6 @@
 
     <div id="overlay"></div>
 </div>
-
 <script src="../js/scripts.min.js"></script>
 </body>
 </html>

@@ -29,18 +29,12 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:image" content="img/@1x/preview.jpg">
 
-    <link rel="stylesheet" href="../css/styles.min.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
 <div class="wrapper">
     <header>
-        header
-
-    </header>
-
-    <main>
-
         <div class="header__nav-bar">
             <div class="header__logo-wrap logo">
                 <button class="logo__mobile-btn" data-toggle-menu>
@@ -60,17 +54,17 @@
             <nav class="nav-bar nav-bar--header">
                 <ul class="nav-bar__list">
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="projects-page.html">
+                        <a class="nav-bar__link active" href="projects-page.html">
                             Проекти
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link active" href="about-us-page.html">
+                        <a class="nav-bar__link" href="about-us-page.html">
                             Про компанію
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="404.html">
+                        <a class="nav-bar__link" href="commercial-page.html">
                             Комерційна нерухомість
                         </a>
                     </li>
@@ -85,7 +79,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="404.html">
+                        <a class="nav-bar__link" href="contacts-page.html">
                             Контакти
                         </a>
                     </li>
@@ -117,17 +111,17 @@
             <div class="menu-mobile">
                 <ul class="nav-bar__list">
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="projects-page.html">
+                        <a class="nav-bar__link active" href="projects-page.html">
                             Проекти
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link active" href="about-us-page.html">
+                        <a class="nav-bar__link" href="about-us-page.html">
                             Про компанію
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="404.html">
+                        <a class="nav-bar__link" href="commercial-page.html">
                             Комерційна нерухомість
                         </a>
                     </li>
@@ -142,7 +136,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="404.html">
+                        <a class="nav-bar__link" href="contacts-page.html">
                             Контакти
                         </a>
                     </li>
@@ -176,22 +170,23 @@
                 </div>
             </div>
         </div>
+    </header>
 
-        <div class="about about--page">
-
-            <div class="about__inner">
-                <h1 class="about__caption">
+    <main>
+        <section class="about-page ">
+            <div class="about-page__inner">
+                <h1 class="about-page__caption">
                     Про компанiю
                 </h1>
 
-                <div class="about__content-wrap">
-                    <p class="about__content">
+                <div class="about-page__content-wrap">
+                    <p class="about-page__content">
                         Компанія ZIM Capital Group здійснює свою діяльність з січня 2014 року як девелоперська компанія
                         повного
                         циклу в області проектування і будівництва.
                     </p>
 
-                    <p class="about__content">
+                    <p class="about-page__content">
                         В центрі кожного проекту компанії ZIM Group - мешканець. Урахування усіх його потреб, його
                         очевидних та не
                         очевидних бажань - це основна задача перед запуском нового проекту та початку роботи над
@@ -200,10 +195,9 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <div class="progress">
+        <section class="progress">
             <ul class="progress__list">
                 <li class="progress__item">
                     <span class="progress__caption">
@@ -233,12 +227,11 @@
                 </li>
             </ul>
 
-            <div class="progress__first-image-decoration"></div>
-            <div class="progress__second-image-decoration"></div>
-        </div>
+<!--            <div class="progress__first-image-decoration"></div>-->
+<!--            <div class="progress__second-image-decoration"></div>-->
+        </section>
 
-
-        <div class="staff-detail">
+        <section class="staff-detail">
             <div class="staff-detail__inner">
                 <p class="staff-detail__item">
                     Компания укомплектована власною технікою, та штатом спеціалістів. Структура компанії складається із
@@ -262,10 +255,9 @@
                     Потреби будівництва забезпеує свій автопарк.
                 </p>
             </div>
+        </section>
 
-        </div>
-
-        <div class="staff">
+        <section class="staff">
             <h2 class="staff__caption">Штат</h2>
 
             <p class="staff__content">Постійний штат компанії ZIM налічує 550 чоловік, серед яких:</p>
@@ -331,9 +323,9 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <section class="technical-equipment">
+        <section style="display: none;" class="technical-equipment">
             <div class="technical-equipment__inner">
                 <h2 class="technical-equipment__caption">
                     Технічне обладнання
@@ -346,7 +338,7 @@
         </section>
         <section class="content__item card-container card-container--projects-page card-container--about-page">
             <div class="card-container__inner">
-                <h2 class="card-container__caption">
+                <h2 class="card-container__caption card-container__caption--about-page">
                     Збудовані  та введені в експлуатацію комплекси
                 </h2>
 
@@ -436,8 +428,7 @@
                 </ul>
             </div>
         </section>
-
-        <section class="partners">
+        <section class="partners partners--about-page">
             <div class="partners__inner">
                 <h2 class="partners__caption">
                     Партнери
@@ -586,7 +577,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__item">
-                        <a class="nav-bar__link" href="404.html">
+                        <a class="nav-bar__link" href="commercial-page.html">
                             Комерційна нерухомість
                         </a>
                     </li>
@@ -601,7 +592,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__item">
-                        <a class="nav-bar__link" href="404.html">
+                        <a class="nav-bar__link" href="contacts-page.html">
                             Контакти
                         </a>
                     </li>
@@ -637,7 +628,8 @@
                 </ul>
 
                 <div class="contact-block">
-                    <a class="contact-block__call-btn" href="#">
+                    <a class="contact-block__call-btn"
+                       href="tel:0674662838">
                         <span class="icon icon-phone-white"></span>
                         <span class="contact-block__call-btn-text">
                             (067) 466 28 38
@@ -654,7 +646,7 @@
             </nav>
         </div>
     </footer>
-
+    <div id="overlay"></div>
 </div>
 <script src="../js/scripts.min.js"></script>
 </body>
