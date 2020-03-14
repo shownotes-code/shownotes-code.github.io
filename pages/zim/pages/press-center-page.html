@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Press center</title>
+    <meta name="description" content="">
+
+    <link rel="icon" href="../img/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="img/@1x/preview.jpg">
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__nav-bar">
+                <div class="header__logo-wrap logo">
+                    <button class="logo__mobile-btn" data-toggle-menu>
+                        <span class="icon icon-nav-bar-menu"></span>
+                        <span class="logo__mobile-btn-text">Меню</span>
+                    </button>
+
+                    <a class="logo__link logo__link--header" href="../index.html">
+                        <img class="logo__img" src="../img/logo.svg" alt="">
+                    </a>
+
+                    <button class="logo__callback-block-btn">
+                        <span class="icon icon-phone"></span>
+                    </button>
+                </div>
+
+                <nav class="nav-bar nav-bar--header">
+                    <ul class="nav-bar__list">
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="projects-page.html">
+                                Проекти
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="about-us-page.html">
+                                Про компанію
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="commercial-page.html">
+                                Комерційна нерухомість
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="404.html">
+                                Послуги
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link active" href="404.html">
+                                Прес-центр
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="contacts-page.html">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="callback-block">
+                        <a class="callback-block__to-call"
+                           href="tel:0674662838">
+                            <span class="icon icon-phone"></span>
+                            <span>(067) 466 28 38</span>
+                        </a>
+
+                        <button class="callback-block__request"
+                                data-modal-target="#modal">
+                            Замовити дзвінок
+                        </button>
+                    </div>
+
+                    <div class="change-lang-block">
+                        <label>
+                            <select name="">
+                                <option value="" selected>UA</option>
+                                <option value="">RU</option>
+                            </select>
+                        </label>
+                    </div>
+                </nav>
+
+                <div class="menu-mobile">
+                    <ul class="nav-bar__list">
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="projects-page.html">
+                                Проекти
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="about-us-page.html">
+                                Про компанію
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="commercial-page.html">
+                                Комерційна нерухомість
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="404.html">
+                                Послуги
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link active" href="press-center-page.html">
+                                Прес-центр
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="contacts-page.html">
+                                Контакти
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="404.html">
+                                Кар’єра
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="callback-block">
+                        <a class="callback-block__to-call"
+                           href="tel:0674662838">
+                            <span class="icon icon-phone"></span>
+                            <span>(067) 466 28 38</span>
+                        </a>
+
+                        <button class="callback-block__request"
+                                data-modal-target="#modal">
+                            Замовити дзвінок
+                        </button>
+                    </div>
+
+                    <div class="change-lang-block">
+                        <label>
+                            <select name="">
+                                <option value="" selected>UA</option>
+                                <option value="">RU</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </header>
+        <main class="content content--press-center">
+
+            <img class="content__inner-bg--press-center-page" src="../img/press-center/press-center-bg.jpg" alt="">
+
+            <section class="press-center press-center--is-page">
+                <div class="press-center__inner">
+
+                    <h1 class="press-center__caption">
+                        Прес-центр
+                    </h1>
+
+                    <div class="press-center__filter-list-wrap">
+                        <button class="press-center__filter-list-btn"
+                                data-btn-press-center>
+                            Усi новини
+                            <span class="icon icon-arrow-down-grey"></span>
+                        </button>
+
+                        <ul class="press-center__filter-list">
+                            <li class="press-center__filter-item active">
+                                <button  class="press-center__filter-btn"
+                                         data-filters="news,media,promotions">Всі статті</button>
+                            </li>
+                            <li class="press-center__filter-item">
+                                <button class="press-center__filter-btn"
+                                        data-filters="news">Новини</button>
+                            </li>
+                            <li class="press-center__filter-item">
+                                <button class="press-center__filter-btn"
+                                        data-filters="media">Публікації в СМІ</button>
+                            </li>
+                            <li class="press-center__filter-item">
+                                <button class="press-center__filter-btn"
+                                        data-filters="promotions">Акції</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="press-center__list" id="news">
+                        <li class="press-center__item" data-filters="promotions">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex1.1.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-active">
+									29 серпня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">Перший будинок Paradise Avenue введений в
+                                    експлуатацію</h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+
+                        <li class="press-center__item" data-filters="news">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex2.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-soon">
+									24 серпня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">
+                                    Zim Group вітає з Днем Незалежності!
+                                </h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+
+                        <li class="press-center__item" data-filters="media">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex3.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-sold">
+									20 червня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">
+                                    Знижка 5% у Parkland до Дня захисту дітей
+                                </h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+
+                        <li class="press-center__item" data-filters="news">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex1.1.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-active">
+									29 серпня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">Перший будинок Paradise Avenue введений в
+                                    експлуатацію</h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+
+                        <li class="press-center__item" data-filters="media">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex2.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-soon">
+									24 серпня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">
+                                    Zim Group вітає з Днем Незалежності!
+                                </h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+
+                        <li class="press-center__item" data-filters="promotions">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex3.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-sold">
+									20 червня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">
+                                    Знижка 5% у Parkland до Дня захисту дітей
+                                </h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+
+                        <li class="press-center__item" data-filters="news">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex1.1.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-active">
+									29 серпня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">Перший будинок Paradise Avenue введений в
+                                    експлуатацію</h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+
+                        <li class="press-center__item" data-filters="media">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex2.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-soon">
+									24 серпня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">
+                                    Zim Group вітає з Днем Незалежності!
+                                </h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+
+                        <li class="press-center__item" data-filters="promotions">
+                            <div class="press-center__article">
+                                <div class="press-center__preview">
+                                    <div class="press-center__img-wrap">
+                                        <img src="../img/press-center/ex3.jpg" alt="">
+                                    </div>
+
+                                    <span class="press-center__date status-sold">
+									20 червня
+								</span>
+                                </div>
+
+                                <h3 class="press-center__article-caption">
+                                    Знижка 5% у Parkland до Дня захисту дітей
+                                </h3>
+
+                                <p class="press-center__article-text">
+                                    Короткий опис новини Короткий опис новини Короткий опис новини Короткий опис новини
+                                    Короткий опис новини
+                                </p>
+
+                                <a class="press-center__article-link" href="article-page.html">Переглянути</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="pagination">
+                <button class="pagination__btn">
+                    <span class="icon icon-loader"></span>
+                    Більше новин
+                </button>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <nav class="nav-bar nav-bar--footer">
+                    <div class="logo-wrap">
+                        <a href="../index.html">
+                            <img class="logo"
+                                 alt=""
+                                 src="../img/footer/logo-footer.svg">
+                        </a>
+                    </div>
+
+                    <ul class="nav-bar__list">
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="projects-page.html">
+                                Проекти
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="about-us-page.html">
+                                Про компанію
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="commercial-page.html">
+                                Комерційна нерухомість
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="404.html">
+                                Послуги
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="press-center-page.html">
+                                Прес-центр
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="contacts-page.html">
+                                Контакти
+                            </a>
+                        </li>
+                        <li class="nav-bar__list-item">
+                            <a class="nav-bar__link" href="404.html">
+                                Кар’єра
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <span class="contacts__label">Адреса офісу</span>
+                            <span class="contacts__content">
+                            <span class="icon icon-marker"></span>
+                            м. Київ, перевулок Охтирський, будинок 7, корпус 3, офіс 3-101
+                        </span>
+                        </li>
+                        <li class="contacts__item">
+                            <span class="contacts__label">Телефон</span>
+                            <span class="contacts__content">
+                            <span class="icon icon-letter"></span>
+                            (067) 466 28 38
+                        </span>
+                        </li>
+                        <li class="contacts__item">
+                            <span class="contacts__label">Відділ маркетингу</span>
+                            <span class="contacts__content">
+                            <span class="icon icon-letter"></span>
+                            marketing@zim-capital.com
+                        </span>
+                        </li>
+                    </ul>
+
+                    <div class="contact-block">
+                        <a class="contact-block__call-btn" href="tel:0674662838">
+                            <span class="icon icon-phone-white"></span>
+                            <span class="contact-block__call-btn-text">
+                            (067) 466 28 38
+                        </span>
+                        </a>
+
+                        <a class="contact-block__btn" href="#">Замовити дзвінок</a>
+
+                        <div class="social-block">
+                            <a class="facebook icon icon-facebook" href="#"></a>
+                            <a class="instagram icon icon-instagram" href="#"></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+
+        <div id="overlay"></div>
+    </div>
+
+    <script src="../js/scripts.min.js"></script>
+
+    <script>
+        let $articles = $('#news .press-center__item');
+
+        $('.press-center__filter-btn').click(function() {
+            let toFilter = $(this).attr('data-filters').split(',');
+            $(this).parent().addClass('active').siblings().removeClass('active');
+
+            $articles.hide().filter(function() {
+                let filter = $(this).attr('data-filters').split(',');
+                return toFilter.some(function(value) {
+                    return filter.indexOf(value) > -1;
+                });
+            }).show();
+        });
+    </script>
+</body>
+</html>

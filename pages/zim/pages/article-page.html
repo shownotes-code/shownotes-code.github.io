@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>404</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Article page</title>
 
     <link rel="icon" href="../img/favicon/favicon.png">
     <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
@@ -30,6 +31,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+
 <div class="wrapper">
     <header>
         <div class="header__nav-bar">
@@ -128,7 +130,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="press-center-page.html">
+                        <a class="nav-bar__link active" href="press-center-page.html">
                             Прес-центр
                         </a>
                     </li>
@@ -168,27 +170,41 @@
             </div>
         </div>
     </header>
-    <main class="content content--not-found">
-        <div class="not-found">
-            <div class="not-found__content">
-                404
+
+    <main class="content content__article-page">
+        <section class="article-page">
+            <div class="article-page__inner">
+                <h1 class="article-page__caption">
+                    Перший будинок Paradise Avenue введений в експлуатацію
+                </h1>
+
+                <span class="article-page__date status-active">29 серпня</span>
+
+                <div class="article-page__block">
+                    <p class="article-page__block-item article-page__text">
+                        Житловий комплекс «Paradise Avenue» побудований за концепцією «місто в місті», а це значить, що в
+                        його межах є все і навіть більше. До Ваших послуг: освітні установи і спортивні комплекси, власний
+                        медичний центр, сучасно обладнані дитячі майданчики та місця відпочинку, зручні паркінги і ще багато
+                        чого корисного. Слід зазначити, що «Paradise Avenue» - це квартал закритого типу, який знаходиться
+                        під охороною служби безпеки комплексу і цілодобовим відеоспостереженням.
+                    </p>
+
+                    <p class="article-page__block-item article-page__text">
+                        Природний ландшафт «Paradise Avenue» є унікальним і неповторним. Таким його робить мальовниче озеро
+                        в центрі комплексу, яке оточене тінистими алеями вздовж берегів. Тут, на спеціально обладнаних
+                        причалах, рибалка з друзями буде справжнім удовольсьвіем, а затишні альтанки стануть улюбленим
+                        місцем для відпочинку після трудових буднів. «Рaradise Avenue» - це Ваш комфорт і безпеку
+                    </p>
+                </div>
+
+                <div class="article-page__img-wrap">
+                    <img class="article-page__img"
+                         src="../img/article-page/article-img.jpg" alt="">
+                </div>
             </div>
-
-            <div class="not-found__description">
-                <h1 class="not-found__description-title">Цю сторінку не побудовано</h1>
-
-                <p class="not-found__description-text">
-                    Сторінки, яку ви шукаєте, не існує або перенесено на іншу адресу. Поверніться на
-                    <a class="not-found__description-link" href="../index.html">головну сторінку</a>
-                    головну сторінку або скористайтесь меню сайта
-                </p>
-
-                <a class="not-found__btn" href="../index.html">
-                    Повернутись на головну
-                </a>
-            </div>
-        </div>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="footer__inner">
             <nav class="nav-bar nav-bar--footer">
@@ -263,7 +279,7 @@
                 </ul>
 
                 <div class="contact-block">
-                    <a class="contact-block__call-btn" href="#">
+                    <a class="contact-block__call-btn" href="tel:0674662838">
                         <span class="icon icon-phone-white"></span>
                         <span class="contact-block__call-btn-text">
                             (067) 466 28 38
@@ -285,5 +301,6 @@
 </div>
 
 <script src="../js/scripts.min.js"></script>
+
 </body>
 </html>
