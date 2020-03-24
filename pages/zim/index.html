@@ -33,6 +33,19 @@
 </head>
 
 <body>
+
+<div class="preloader" style="display: none;">
+    <img class="preloader__img" src="img/preloader/preloader-bg.jpg" alt="">
+    <div class="preloader__container">
+        <div class="preloader__box">
+            <span></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+        </div>
+    </div>
+</div>
+
 <div class="wrapper">
     <header>
         <div class="header__nav-bar">
@@ -46,9 +59,10 @@
                     <img class="logo__img" src="img/logo.svg" alt="">
                 </a>
 
-                <button class="logo__callback-block-btn">
+                <a class="logo__callback-block-btn"
+                   href="tel:0674662838">
                     <span class="icon icon-phone"></span>
-                </button>
+                </a>
             </div>
 
             <nav class="nav-bar nav-bar--header">
@@ -69,7 +83,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="pages/404.html">
+                        <a class="nav-bar__link" href="pages/services-page.html">
                             Послуги
                         </a>
                     </li>
@@ -84,7 +98,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="pages/404.html">
+                        <a class="nav-bar__link" href="pages/career-page.html">
                             Вакансії
                         </a>
                     </li>
@@ -98,7 +112,7 @@
                     </a>
 
                     <button class="callback-block__request"
-                            data-modal-target="#modal">
+                            data-modal-target="#modal-callback">
                         Замовити дзвінок
                     </button>
                 </div>
@@ -131,7 +145,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link" href="pages/404.html">
+                        <a class="nav-bar__link" href="pages/services-page.html">
                             Послуги
                         </a>
                     </li>
@@ -160,7 +174,7 @@
                     </a>
 
                     <button class="callback-block__request"
-                            data-modal-target="#modal">
+                            data-modal-target="#modal-callback">
                         Замовити дзвінок
                     </button>
                 </div>
@@ -205,12 +219,12 @@
                             </span>
                         </a>
 
-                        <a class="header__slogan-btn-open-video" href="#">
+                        <button class="header__slogan-btn-open-video">
                             <span class="header__slogan-btn-open-video-text">
                                 Переглянути відео
                                 <span class="icon icon-play"></span>
                             </span>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -276,6 +290,7 @@
 
                                     <span class="residential-block__date status-active">
 										У продажу
+                                        <span></span>
 									</span>
                                 </div>
 
@@ -304,6 +319,7 @@
 
                                     <span class="residential-block__date status-active">
 										У продажу
+                                        <span></span>
 									</span>
                                 </div>
 
@@ -332,6 +348,7 @@
 
                                     <span class="residential-block__date status-active">
 										У продажу
+                                        <span></span>
 									</span>
                                 </div>
 
@@ -360,6 +377,7 @@
 
                                     <span class="residential-block__date status-soon">
 										Скоро
+                                        <span></span>
 									</span>
                                 </div>
 
@@ -386,6 +404,7 @@
 
                                     <span class="residential-block__date status-sold">
 										Продано
+                                        <span></span>
 									</span>
                                 </div>
 
@@ -452,9 +471,10 @@
                         <a class="commercial-block__btn-show" href="#">
                             Переглянути
                         </a>
-                        <a class="commercial-block__btn-callback" href="#">
+                        <button data-modal-target="#modal-callback"
+                                class="commercial-block__btn-callback">
                             Зв’язатись з менеджером
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -548,11 +568,15 @@
 
                 <div class="contacts__container">
                     <div class="contacts__form">
-                        <form action="">
+                        <form action="" data-form>
                             <div class="contacts__form-label-wrap">
                                 <label class="contacts__form-label">
                                     <span class="contacts__form-label-text">Номер телефону*</span>
-                                    <input class="contacts__form-input" type="text">
+                                    <input class="contacts__form-input"
+                                           required
+                                           data-phone-validation
+                                           placeholder="+38(___) ___-__-__"
+                                           type="text">
                                 </label>
 
                                 <div class="validation-block"></div>
@@ -561,11 +585,14 @@
                             <div class="contacts__form-label-wrap">
                                 <label class="contacts__form-label">
                                     <span class="contacts__form-label-text">Повiдомлення</span>
-                                    <textarea class="contacts__form-textarea" name="" cols="30" rows="10"></textarea>
+                                    <textarea class="contacts__form-textarea" name=""></textarea>
                                 </label>
                             </div>
 
-                            <button class="contacts__form-btn" type="submit">
+                            <button class="contacts__form-btn"
+                                    data-modal-callback-send
+                                    data-modal-target="#modal-callback"
+                                    type="submit">
                                 Надіслати
                             </button>
                         </form>
@@ -600,6 +627,7 @@
 
                                 <span class="press-center__date status-active">
 									29 серпня
+                                    <span></span>
 								</span>
                             </div>
 
@@ -624,6 +652,7 @@
 
                                 <span class="press-center__date status-soon">
 									24 серпня
+                                    <span></span>
 								</span>
                             </div>
 
@@ -649,6 +678,7 @@
 
                                 <span class="press-center__date status-sold">
 									20 червня
+                                    <span></span>
 								</span>
                             </div>
 
@@ -767,21 +797,8 @@
         </div>
     </footer>
 
-<!--Temporary COMMENT / TODO delete after refactoring-->
-    <!--    <button data-modal-target="#modal">Open Modal</button>-->
-    <!--    <div class="modal" id="modal">-->
-    <!--        <div class="modal-header">-->
-    <!--            <div class="title">Example Modal</div>-->
-    <!--            <button data-close-button class="close-button">&times;</button>-->
-    <!--        </div>-->
-    <!--        <div class="modal-body">-->
-    <!--            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--/END Temporary COMMENT / TODO delete after refactoring-->
-
-    <div class="modal-block">
-        <div class="modal modal-success" id="modal">
+    <div date-modal-wrap class="modal-wrap">
+        <div class="modal modal-success" id="success">
             <button data-close-button class="modal__btn-close">
                 <span class="icon icon-close"></span>
             </button>
@@ -796,54 +813,57 @@
                 </div>
             </div>
             <div class="modal__body">
-                <div data-close-button class="modal__body-btn-close">
+                <div data-close-button
+                     class="modal__body-btn-close">
                     Закрити
                 </div>
             </div>
         </div>
-
-        <!--Temporary COMMENT / TODO delete after refactoring-->
-
-        <!--        <div class="modal modal-callback" id="modal-callback">-->
-        <!--            <button data-close-button class="modal__btn-close">-->
-        <!--                <span class="icon icon-close"></span>-->
-        <!--            </button>-->
-        <!--            <div class="modal__head">-->
-        <!--                <div class="modal__title">-->
-        <!--                    Введіть номер телефону-->
-        <!--                </div>-->
-
-        <!--                <div class="modal__content">-->
-        <!--                    Зовсім скоро з вами зв’яжеться наш менеджер-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="modal__body">-->
-        <!--                <form class="modal__body-form" action="">-->
-        <!--                    <div class="contacts__form-label-wrap">-->
-        <!--                        <label class="contacts__form-label">-->
-        <!--                            <span class="contacts__form-label-text">Номер телефону</span>-->
-        <!--                            <input class="contacts__form-input" type="text">-->
-        <!--                        </label>-->
-
-        <!--                        <div class="validation-block"></div>-->
-        <!--                    </div>-->
-
-        <!--                    <button data-close-button class="modal__body-btn-close" type="submit">-->
-        <!--                        Надіслати-->
-        <!--                    </button>-->
-        <!--                </form>-->
-
-        <!--                <p class="privacy-policy">-->
-        <!--                    Натискаючи кнопку “Замовити дзвінок” ви даєте згоду на обробку персональних даних згідно з нашою-->
-        <!--                    <a class="privacy-policy__link" href="#">політикою конфіденційности</a>-->
-        <!--                </p>-->
-        <!--            </div>-->
-        <!--        </div>-->
-
-        <!--/END Temporary COMMENT / TODO delete after refactoring-->
-
     </div>
-    <div id="overlay"></div>
+
+    <div date-modal-wrap class="modal-wrap">
+        <div class="modal modal-callback" id="modal-callback">
+            <button data-close-button class="modal__btn-close">
+                <span class="icon icon-close"></span>
+            </button>
+            <div class="modal__head">
+                <h3 class="modal__title">
+                    Введіть номер телефону
+                </h3>
+
+                <span class="modal__content">
+                    І наш менеджер зателефонує вам протягом 5 хвилин
+                </span>
+            </div>
+            <div class="modal__body">
+                <form class="modal__body-form" action="">
+                    <div class="contacts__form-label-wrap">
+                        <label class="contacts__form-label">
+                            <span class="contacts__form-label-text">Номер телефону</span>
+                            <input class="contacts__form-input"
+                                   data-phone-validation
+                                   required
+                                   placeholder="+38(___) ___-__-__"
+                                   type="text">
+                        </label>
+
+                        <div class="validation-block"></div>
+                    </div>
+
+                    <button data-modal-callback-send
+                            data-modal-target="#success"
+                            class="modal__body-btn-close" type="submit">
+                        Надіслати
+                    </button>
+                </form>
+
+                <p class="privacy-policy">
+                    Натискаючи кнопку “Замовити дзвінок” ви даєте згоду на обробку персональних даних згідно з нашою
+                    <a class="privacy-policy__link" href="pages/404.html">політикою конфіденційности</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 
 

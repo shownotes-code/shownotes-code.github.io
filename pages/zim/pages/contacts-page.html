@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -45,9 +45,10 @@
                     <img class="logo__img" src="../img/logo.svg" alt="">
                 </a>
 
-                <button class="logo__callback-block-btn">
+                <a class="logo__callback-block-btn"
+                   href="tel:0674662838">
                     <span class="icon icon-phone"></span>
-                </button>
+                </a>
             </div>
 
             <nav class="nav-bar nav-bar--header">
@@ -78,7 +79,7 @@
                         </a>
                     </li>
                     <li class="nav-bar__list-item">
-                        <a class="nav-bar__link active" href="contacts-page.html">
+                        <a class="nav-bar__link" href="contacts-page.html">
                             Контакти
                         </a>
                     </li>
@@ -92,7 +93,7 @@
                     </a>
 
                     <button class="callback-block__request"
-                            data-modal-target="#modal">
+                            data-modal-target="#modal-callback">
                         Замовити дзвінок
                     </button>
                 </div>
@@ -154,7 +155,7 @@
                     </a>
 
                     <button class="callback-block__request"
-                            data-modal-target="#modal">
+                            data-modal-target="#modal-callback">
                         Замовити дзвінок
                     </button>
                 </div>
@@ -205,7 +206,11 @@
                             <div class="contacts__form-label-wrap">
                                 <label class="contacts__form-label">
                                     <span class="contacts__form-label-text">Номер телефону*</span>
-                                    <input class="contacts__form-input" type="text">
+                                    <input class="contacts__form-input"
+                                           required
+                                           data-phone-validation
+                                           placeholder="+38(___) ___-__-__"
+                                           type="text">
                                 </label>
 
                                 <div class="validation-block"></div>
@@ -236,6 +241,7 @@
                 </div>
             </div>
         </section>
+
         <section class="more-contacts">
             <div class="more-contacts__inner">
                 <h2 class="more-contacts__caption">
@@ -248,37 +254,37 @@
 
                 <ul class="more-contacts__list">
                     <li class="more-contacts__item">
-                        <button class="more-contacts__btn">
+                        <button data-modal-target="#contact-list" class="more-contacts__btn">
                             Відділи продажу
                         </button>
                     </li>
                     <li class="more-contacts__item">
-                        <button class="more-contacts__btn">
+                        <button data-modal-target="#contact-list" class="more-contacts__btn">
                             Відділ комерційної нерухомості
                         </button>
                     </li>
                     <li class="more-contacts__item">
-                        <button class="more-contacts__btn">
+                        <button data-modal-target="#contact-list" class="more-contacts__btn">
                             Відділ постачання
                         </button>
                     </li>
                     <li class="more-contacts__item">
-                        <button class="more-contacts__btn">
+                        <button data-modal-target="#contact-list" class="more-contacts__btn">
                             Бухгалтерія
                         </button>
                     </li>
                     <li class="more-contacts__item">
-                        <button class="more-contacts__btn">
+                        <button data-modal-target="#contact-list" class="more-contacts__btn">
                             Кошторисний відділ
                         </button>
                     </li>
                     <li class="more-contacts__item">
-                        <button class="more-contacts__btn">
+                        <button data-modal-target="#contact-list" class="more-contacts__btn">
                             Архітектурний відділ
                         </button>
                     </li>
                     <li class="more-contacts__item">
-                        <button class="more-contacts__btn">
+                        <button data-modal-target="#contact-list" class="more-contacts__btn">
                             Я не знаю, з яким відділом зв’язатись
                         </button>
                     </li>
@@ -368,7 +374,10 @@
                         </span>
                     </a>
 
-                    <a class="contact-block__btn" href="#">Замовити дзвінок</a>
+                    <button class="contact-block__btn"
+                            data-modal-target="#modal-callback">
+                        Замовити дзвінок
+                    </button>
 
                     <div class="social-block">
                         <a class="facebook icon icon-facebook" href="#"></a>
@@ -379,8 +388,165 @@
         </div>
     </footer>
 
+    <div class="modal-wrap">
+        <div class="modal modal-success" id="success">
+            <button data-close-button class="modal__btn-close">
+                <span class="icon icon-close"></span>
+            </button>
+            <div class="modal__head">
+                <span class="icon icon-success"></span>
+                <div class="modal__title">
+                    Заявка успішно надіслана
+                </div>
+
+                <div class="modal__content">
+                    Зовсім скоро з вами зв’яжеться наш менеджер
+                </div>
+            </div>
+            <div class="modal__body">
+                <div data-close-button
+                     class="modal__body-btn-close">
+                    Закрити
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrap">
+        <div class="modal modal-callback" id="modal-callback">
+            <button data-close-button class="modal__btn-close">
+                <span class="icon icon-close"></span>
+            </button>
+            <div class="modal__head">
+                <h3 class="modal__title">
+                    Введіть номер телефону
+                </h3>
+
+                <span class="modal__content">
+                    І наш менеджер зателефонує вам протягом 5 хвилин
+                </span>
+            </div>
+
+            <div class="modal__body">
+                <form class="modal__body-form" action="">
+                    <div class="contacts__form-label-wrap">
+                        <label class="contacts__form-label">
+                            <span class="contacts__form-label-text">Номер телефону</span>
+                            <input class="contacts__form-input"
+                                   data-phone-validation
+                                   required
+                                   placeholder="+38(___) ___-__-__"
+                                   type="text">
+                        </label>
+
+                        <div class="validation-block"></div>
+                    </div>
+
+                    <button data-modal-callback-send
+                            data-modal-target="#success"
+                            class="modal__body-btn-close" type="submit">
+                        Надіслати
+                    </button>
+                </form>
+
+                <p class="privacy-policy">
+                    Натискаючи кнопку “Замовити дзвінок” ви даєте згоду на обробку персональних даних згідно з нашою
+                    <a class="privacy-policy__link" href="pages/404.html">політикою конфіденційности</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrap">
+        <div class="modal modal-contact-list" id="contact-list">
+            <button data-close-button class="modal__btn-close">
+                <span class="icon icon-close"></span>
+            </button>
+            <div class="modal__head">
+                <h3 class="modal__title">
+                    Відділи продажу
+                </h3>
+            </div>
+            <ul class="modal__body-list">
+                <li class="modal__body-item">
+                    <h4 class="modal__body-item-caption">Paradise Avenue</h4>
+                    <div class="modal__body-item-description">
+                        <span class="icon icon-cotact-marker"></span>
+                        <span class="modal__body-item-description-address">вулиця В'ячеслава Чорновола  Чорновола, 46а</span>
+                        <span class="modal__body-item-description-phone">(067) 466 28 38</span>
+                        <span class="modal__body-item-description-email">email@zim-group.com</span>
+                    </div>
+                </li>
+                <li class="modal__body-item">
+                    <h4 class="modal__body-item-caption">Paradise Avenue</h4>
+                    <div class="modal__body-item-description">
+                        <span class="icon icon-cotact-marker"></span>
+                        <span class="modal__body-item-description-address">вулиця В'ячеслава Чорновола, 46а</span>
+                        <span class="modal__body-item-description-phone">(067) 466 28 38</span>
+                        <span class="modal__body-item-description-email">email@zim-group.com</span>
+                    </div>
+                </li>
+                <li class="modal__body-item">
+                    <h4 class="modal__body-item-caption">Paradise Avenue</h4>
+                    <div class="modal__body-item-description">
+                        <span class="icon icon-cotact-marker"></span>
+                        <span class="modal__body-item-description-address">вулиця В'ячеслава Чорновола, 46а</span>
+                        <span class="modal__body-item-description-phone">(067) 466 28 38</span>
+                        <span class="modal__body-item-description-email">email@zim-group.com</span>
+                    </div>
+                </li>
+                <li class="modal__body-item">
+                    <h4 class="modal__body-item-caption">Paradise Avenue</h4>
+                    <div class="modal__body-item-description">
+                        <span class="icon icon-cotact-marker"></span>
+                        <span class="modal__body-item-description-address">вулиця В'ячеслава Чорновола, 46а</span>
+                        <span class="modal__body-item-description-phone">(067) 466 28 38</span>
+                        <span class="modal__body-item-description-email">email@zim-group.com</span>
+                    </div>
+                </li>
+                <li class="modal__body-item">
+                    <h4 class="modal__body-item-caption">Paradise Avenue</h4>
+                    <div class="modal__body-item-description">
+                        <span class="icon icon-cotact-marker"></span>
+                        <span class="modal__body-item-description-address">вулиця В'ячеслава Чорновола, 46а</span>
+                        <span class="modal__body-item-description-phone">(067) 466 28 38</span>
+                        <span class="modal__body-item-description-email">email@zim-group.com</span>
+                    </div>
+                </li>
+                <li class="modal__body-item">
+                    <h4 class="modal__body-item-caption">Paradise Avenue</h4>
+                    <div class="modal__body-item-description">
+                        <span class="icon icon-cotact-marker"></span>
+                        <span class="modal__body-item-description-address">вулиця В'ячеслава Чорновола, 46а</span>
+                        <span class="modal__body-item-description-phone">(067) 466 28 38</span>
+                        <span class="modal__body-item-description-email">email@zim-group.com</span>
+                    </div>
+                </li>
+                <li class="modal__body-item">
+                    <h4 class="modal__body-item-caption">Paradise Avenue</h4>
+                    <div class="modal__body-item-description">
+                        <span class="icon icon-cotact-marker"></span>
+                        <span class="modal__body-item-description-address">вулиця В'ячеслава Чорновола, 46а</span>
+                        <span class="modal__body-item-description-phone">(067) 466 28 38</span>
+                        <span class="modal__body-item-description-email">email@zim-group.com</span>
+                    </div>
+                </li>
+                <li class="modal__body-item">
+                    <h4 class="modal__body-item-caption">Paradise Avenue</h4>
+                    <div class="modal__body-item-description">
+                        <span class="icon icon-cotact-marker"></span>
+                        <span class="modal__body-item-description-address">вулиця В'ячеслава Чорновола, 46а</span>
+                        <span class="modal__body-item-description-phone">(067) 466 28 38</span>
+                        <span class="modal__body-item-description-email">email@zim-group.com</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div id="overlay"></div>
 </div>
 <script src="../js/scripts.min.js"></script>
+
 </body>
 </html>
