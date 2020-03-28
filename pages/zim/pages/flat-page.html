@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flat page</title>
+
+    <link rel="icon" href="../img/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="img/@1x/preview.jpg">
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="header__nav-bar">
+            <div class="header__logo-wrap logo">
+                <button class="logo__mobile-btn" data-toggle-menu>
+                    <span class="icon icon-nav-bar-menu"></span>
+                    <span class="logo__mobile-btn-text">Меню</span>
+                </button>
+
+                <a class="logo__link logo__link--header" href="../index.html">
+                    <img class="logo__img" src="../img/logo.svg" alt="">
+                </a>
+
+                <a class="logo__callback-block-btn"
+                   href="tel:0674662838">
+                    <span class="icon icon-phone"></span>
+                </a>
+            </div>
+
+            <nav class="nav-bar nav-bar--header">
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="projects-page.html">
+                            Проекти
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="about-us-page.html">
+                            Про компанію
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="commercial-page.html">
+                            Комерційна нерухомість
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="404.html">
+                            Послуги
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="press-center-page.html">
+                            Прес-центр
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="contacts-page.html">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="callback-block">
+                    <a class="callback-block__to-call"
+                       href="tel:0674662838">
+                        <span class="icon icon-phone"></span>
+                        <span>(067) 466 28 38</span>
+                    </a>
+
+                    <button class="callback-block__request"
+                            data-modal-target="#modal">
+                        Замовити дзвінок
+                    </button>
+                </div>
+
+                <div class="change-lang-block">
+                    <label>
+                        <select name="">
+                            <option value="" selected>UA</option>
+                            <option value="">RU</option>
+                        </select>
+                    </label>
+                </div>
+            </nav>
+
+            <div class="menu-mobile">
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="projects-page.html">
+                            Проекти
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="about-us-page.html">
+                            Про компанію
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="commercial-page.html">
+                            Комерційна нерухомість
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="404.html">
+                            Послуги
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="press-center-page.html">
+                            Прес-центр
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="contacts-page.html">
+                            Контакти
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="404.html">
+                            Кар’єра
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="callback-block">
+                    <a class="callback-block__to-call"
+                       href="tel:0674662838">
+                        <span class="icon icon-phone"></span>
+                        <span>(067) 466 28 38</span>
+                    </a>
+
+                    <button class="callback-block__request"
+                            data-modal-target="#modal">
+                        Замовити дзвінок
+                    </button>
+                </div>
+
+                <div class="change-lang-block">
+                    <label>
+                        <select name="">
+                            <option value="" selected>UA</option>
+                            <option value="">RU</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </header>
+    <main class="content content--flat-page">
+        <section class="flat">
+            <div class="flat__inner">
+                <h1 class="flat__header">
+                    Нежитлове примiщення №1.1 у ЖК Forest Park
+                </h1>
+
+
+
+<!--                <div class="lol">-->
+<!--                    <div class="lol-header">Header</div>-->
+<!--                    -->
+<!--                </div>-->
+
+
+
+
+
+
+                <div class="flat__content">
+                    <div class="flat__preview-wrap">
+                        <img class="flat__preview-img"
+                             src="../img/flor-page/ex0.jpg"
+                             alt="">
+                    </div>
+
+                    <ul class="flat__feature-list">
+                        <li class="flat__feature-item">
+                            <span class="flat__feature-label">
+                                Площа
+                            </span>
+                            <span class="flat__feature-value">
+                                40
+                                <span class="flat__feature-sup-value">
+                                    м <sup>2</sup>
+                                </span>
+                            </span>
+                        </li>
+
+                        <li class="flat__feature-item">
+                            <span class="flat__feature-label">
+                                Район
+                            </span>
+                            <span class="flat__feature-value">
+                                Оболонський
+                            </span>
+                        </li>
+
+                        <li class="flat__feature-item">
+                            <span class="flat__feature-label">
+                                Адреса
+                            </span>
+                            <span class="flat__feature-value">
+                                вулиця Дніпроводська, 1
+                            </span>
+                        </li>
+
+                        <li class="flat__feature-item">
+                            <span class="flat__feature-label">
+                                Строк здачі в експлуатацію
+                            </span>
+                            <span class="flat__feature-value">
+                                IV квартал 2020
+                            </span>
+                        </li>
+                    </ul>
+
+                    <div class="flat__info">
+                        <div class="flat__info-item">
+                               <span class="flat__info-price">
+                                17 000
+                                <span class="flat__info-price-currency">
+                                    грн / м<sup>2</sup>
+                                </span>
+                            </span>
+
+                            <button class="flat__info-callback-btn">
+                                Зв’язатись з менеджером
+                            </button>
+                        </div>
+
+
+                        <a class="flat__info-item flat__info-link" href="#">
+                            <span class="icon icon-pdf" aria-hidden="true"></span>
+                            Завантажити PDF
+                        </a>
+                    </div>
+
+                    <ul class="flat__position-list">
+                        <li class="flat__position-item">
+                            <span class="flat__position-label">Розташування на поверху</span>
+                            <div class="flat__position-img-wrap">
+                                <img src="../img/flor-page/ex1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="flat__position-item">
+                            <span class="flat__position-label">Розташування у будинку</span>
+                            <div class="flat__position-img-wrap">
+                                <img src="../img/flor-page/ex2.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="commercial-block__list">
+                        <li class="commercial-block__flor-caption">
+                            <span>Призначення</span>
+                        </li>
+                        <li class="commercial-block__item">
+                            <div class="commercial-block__img-wrap">
+                                <img class="commercial-block__img" src="../img/commercial-block/ex1.jpg" alt="">
+                            </div>
+                            <span class="commercial-block__item-text">
+                                    Ресторан
+                                </span>
+                        </li>
+                        <li class="commercial-block__item">
+                            <div class="commercial-block__img-wrap">
+                                <img class="commercial-block__img" src="../img/commercial-block/ex2.jpg" alt="">
+                            </div>
+                            <span class="commercial-block__item-text">
+                                    Кав’ярня
+                                </span>
+                        </li>
+                        <li class="commercial-block__item">
+                            <div class="commercial-block__img-wrap">
+                                <img class="commercial-block__img" src="../img/commercial-block/ex3.jpg" alt="">
+                            </div>
+                            <span class="commercial-block__item-text">
+                                    Салон краси
+                                </span>
+                        </li>
+                    </ul>
+                </div>
+
+
+<!--                <div class="flat__content">-->
+<!--                    <div class="flat__preview-wrap">-->
+<!--                        <img class="flat__preview-img"-->
+<!--                             src="../img/flor-page/ex0.jpg"-->
+<!--                             alt="">-->
+<!--                    </div>-->
+
+
+<!--                    <div class="flat__content-item">-->
+<!--                        <ul class="card__feature-list">-->
+<!--                            <li class="card__feature-item">-->
+<!--                            <span class="card__feature-label">-->
+<!--                                Площа-->
+<!--                            </span>-->
+<!--                                <span class="card__feature-value">-->
+<!--                                40-->
+<!--                                <span class="card__feature-sup-value">-->
+<!--                                    м <sup>2</sup>-->
+<!--                                </span>-->
+<!--                            </span>-->
+<!--                            </li>-->
+
+<!--                            <li class="card__feature-item">-->
+<!--                            <span class="card__feature-label">-->
+<!--                                Район-->
+<!--                            </span>-->
+<!--                                <span class="card__feature-value">-->
+<!--                                Оболонський-->
+<!--                            </span>-->
+<!--                            </li>-->
+
+<!--                            <li class="card__feature-item">-->
+<!--                            <span class="card__feature-label">-->
+<!--                                Адреса-->
+<!--                            </span>-->
+<!--                                <span class="card__feature-value">-->
+<!--                                вулиця Дніпроводська, 1-->
+<!--                            </span>-->
+<!--                            </li>-->
+
+<!--                            <li class="card__feature-item">-->
+<!--                            <span class="card__feature-value">-->
+<!--                                Строк здачі в експлуатацію-->
+<!--                            </span>-->
+<!--                                <span class="card__feature-value">-->
+<!--                                IV квартал 2020-->
+<!--                            </span>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+
+<!--                        <div class="flat__info">-->
+<!--                            <div class="flat__info-item">-->
+<!--                               <span class="flat__info-price">-->
+<!--                                17 000-->
+<!--                                <span class="flat__info-price-currency">-->
+<!--                                    грн / м<sup>2</sup>-->
+<!--                                </span>-->
+<!--                            </span>-->
+
+<!--                                <button class="flat__info-callback-btn">-->
+<!--                                    Зв’язатись з менеджером-->
+<!--                                </button>-->
+<!--                            </div>-->
+
+
+<!--                            <a class="flat__info-item flat__info-link" href="#">-->
+<!--                                <span class="icon icon-pdf" aria-hidden="true"></span>-->
+<!--                                Завантажити PDF-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="flat__content-item">-->
+<!--                        <ul class="flat__position-list">-->
+<!--                            <li class="flat__position-item">-->
+<!--                                <span class="flat__position-label">Розташування на поверху</span>-->
+<!--                                <div class="flat__position-img-wrap">-->
+<!--                                    <img src="../img/flor-page/ex1.jpg" alt="">-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li class="flat__position-item">-->
+<!--                                <span class="flat__position-label">Розташування у будинку</span>-->
+<!--                                <div class="flat__position-img-wrap">-->
+<!--                                    <img src="../img/flor-page/ex2.jpg" alt="">-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+
+<!--                        <ul class="commercial-block__list">-->
+<!--                            <li class="commercial-block__flor-caption">-->
+<!--                                <span>Призначення</span>-->
+<!--                            </li>-->
+<!--                            <li class="commercial-block__item">-->
+<!--                                <div class="commercial-block__img-wrap">-->
+<!--                                    <img class="commercial-block__img" src="../img/commercial-block/ex1.jpg" alt="">-->
+<!--                                </div>-->
+<!--                                <span class="commercial-block__item-text">-->
+<!--                                    Ресторан-->
+<!--                                </span>-->
+<!--                            </li>-->
+<!--                            <li class="commercial-block__item">-->
+<!--                                <div class="commercial-block__img-wrap">-->
+<!--                                    <img class="commercial-block__img" src="../img/commercial-block/ex2.jpg" alt="">-->
+<!--                                </div>-->
+<!--                                <span class="commercial-block__item-text">-->
+<!--                                    Кав’ярня-->
+<!--                                </span>-->
+<!--                            </li>-->
+<!--                            <li class="commercial-block__item">-->
+<!--                                <div class="commercial-block__img-wrap">-->
+<!--                                    <img class="commercial-block__img" src="../img/commercial-block/ex3.jpg" alt="">-->
+<!--                                </div>-->
+<!--                                <span class="commercial-block__item-text">-->
+<!--                                    Салон краси-->
+<!--                                </span>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+            </div>
+        </section>
+        <section class="flat-characters">
+            <h2 class="flat-characters__caption">
+                Технічні характеристики проекту
+            </h2>
+
+            <ul class="flat-characters__list">
+                <li class="flat-characters__item">
+                    <div class="flat-characters__block">
+                        <span class="flat-characters__text">Кількість будинків</span>
+                        <span class="flat-characters__text">6</span>
+                    </div>
+                </li>
+                <li class="flat-characters__item">
+                    <div class="flat-characters__block">
+                        <span class="flat-characters__text">Кількість поверхів</span>
+                        <span class="flat-characters__text">4-6</span>
+                    </div>
+                </li>
+                <li class="flat-characters__item">
+                    <div class="flat-characters__block">
+                        <span class="flat-characters__text">Технологія будівництва</span>
+                        <span class="flat-characters__text">цегляна, монолітно-каркасна</span>
+                    </div>
+                </li>
+                <li class="flat-characters__item">
+                    <div class="flat-characters__block">
+                        <span class="flat-characters__text">Матеріал стін</span>
+                        <span class="flat-characters__text">цегла</span>
+                    </div>
+                </li>
+                <li class="flat-characters__item">
+                    <div class="flat-characters__block">
+                        <span class="flat-characters__text">Опалення</span>
+                        <span class="flat-characters__text">автономне</span>
+                    </div>
+                </li>
+                <li class="flat-characters__item">
+                    <div class="flat-characters__block">
+                        <span class="flat-characters__text">Висота стелі</span>
+                        <span class="flat-characters__text">2,8 м</span>
+                    </div>
+                </li>
+                <li class="flat-characters__item">
+                    <div class="flat-characters__block">
+                        <span class="flat-characters__text">Кількість квартир</span>
+                        <span class="flat-characters__text">60</span>
+                    </div>
+                </li>
+                <li class="flat-characters__item">
+                    <div class="flat-characters__block">
+                        <span class="flat-characters__text">Стан квартири</span>
+                        <span class="flat-characters__text">під ремонт</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="about about--on-career-page">
+            <div class="about__inner">
+                <h2 class="about__caption">
+                    Про проект
+                </h2>
+                <div class="about__content-wrap">
+                    <p class="about__content">
+                        ЖК Forest Park — сучасна альтернатива квартирі «на асфальті» для тих, хто звик досягати успіху в
+                        роботі, тому вдома прагне справжнього — комфорту та спокою в оточенні природи.
+                    </p>
+                    <p class="about__content">
+                        Все необхідне можна знайти на території комплексу: нежитлові приміщення для зручності жителів ЖК
+                        передбачається використовувати для організації роботи міні-супермаркети, кафе, медичного центру,
+                        аптеки, відділення банку, фітнес-клубу, міні бізнес-центру.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content__item map-container--big">
+            <div class="map-container__inner"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <nav class="nav-bar nav-bar--footer">
+                <div class="logo-wrap">
+                    <a href="../index.html">
+                        <img class="logo"
+                             alt=""
+                             src="../img/footer/logo-footer.svg">
+                    </a>
+                </div>
+
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="projects-page.html">
+                            Проекти
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="about-us-page.html">
+                            Про компанію
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="commercial-page.html">
+                            Комерційна нерухомість
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="404.html">
+                            Послуги
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="press-center-page.html">
+                            Прес-центр
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="contacts-page.html">
+                            Контакти
+                        </a>
+                    </li>
+                    <li class="nav-bar__list-item">
+                        <a class="nav-bar__link" href="404.html">
+                            Кар’єра
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <span class="contacts__label">Адреса офісу</span>
+                        <span class="contacts__content">
+                            <span class="icon icon-marker"></span>
+                            м. Київ, перевулок Охтирський, будинок 7, корпус 3, офіс 3-101
+                        </span>
+                    </li>
+                    <li class="contacts__item">
+                        <span class="contacts__label">Телефон</span>
+                        <span class="contacts__content">
+                            <span class="icon icon-letter"></span>
+                            (067) 466 28 38
+                        </span>
+                    </li>
+                    <li class="contacts__item">
+                        <span class="contacts__label">Відділ маркетингу</span>
+                        <span class="contacts__content">
+                            <span class="icon icon-letter"></span>
+                            marketing@zim-capital.com
+                        </span>
+                    </li>
+                </ul>
+
+                <div class="contact-block">
+                    <a class="contact-block__call-btn" href="tel:0674662838">
+                        <span class="icon icon-phone-white"></span>
+                        <span class="contact-block__call-btn-text">
+                            (067) 466 28 38
+                        </span>
+                    </a>
+
+                    <a class="contact-block__btn" href="#">Замовити дзвінок</a>
+
+                    <div class="social-block">
+                        <a class="facebook icon icon-facebook" href="#"></a>
+                        <a class="instagram icon icon-instagram" href="#"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <div id="overlay"></div>
+</div>
+
+<script src="../js/scripts.min.js"></script>
+
+</body>
+</html>

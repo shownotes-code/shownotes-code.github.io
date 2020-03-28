@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Career page</title>
+    <title>Vacancy page</title>
 
     <link rel="icon" href="../img/favicon/favicon.png">
     <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
@@ -172,73 +172,173 @@
             </div>
         </div>
     </header>
-    <main class="content content--career-page">
-        <section class="header header--on-career-page">
-            <div class="header__inner">
-                <img class="header__slogan-img" src="../img/career-page/career-page-bg.jpg" alt="">
-                <div class="header__slogan">
-                    <h1 class="header__slogan-title">
-                        Кар’єра
-                    </h1>
+    <main class="content content--vacancy-page">
+        <div class="content__inner">
+            <section class="vacancy">
+                <h1 class="vacancy__title">
+                    Інженер проектувальник
+                </h1>
 
-                    <span class="header__slogan-subtitle">
-                        Приєднуйся до Zim Group
-                    </span>
+                <p class="vacancy__description">
+                    Компания «Zim Group» — девелоперская компания полного цикла, приглашает к сотрудничеству
+                    Инженер-проектировщик систем отопления и вентиляции.
+                </p>
 
-                    <div class="header__slogan-btn-wrap">
-                        <a class="header__slogan-btn-about" href="404.html">
-                            <span class="header__slogan-btn-about-text">
-                                Переглянути вакансії
-                            </span>
-                        </a>
+                <div class="vacancy__item vacancy__block">
+                    <h3 class="vacancy__subtitle">
+                        Что для нас важно:
+                    </h3>
+
+                    <ul>
+                        <li class="vacancy__text">
+                            Высшее образование инженерно-строительное;
+                        </li>
+                        <li class="vacancy__text">
+                            опыт работы в проектировании систем отопления и вентиляции от 3 лет;
+                        </li>
+                        <li class="vacancy__text">
+                            знание и навыки работы AutoCad, MS Office, Revit (желательно);
+                        </li>
+
+                        <li class="vacancy__text">
+                            знание законодательства Украины (строительных норм ДБН (ДСТУ);
+                        </li>
+                        <li class="vacancy__text">
+                            знание постановлений, распоряжений, приказов государственных органов, методических и
+                            нормативных материалов по проектированию.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="vacancy__item vacancy__block">
+                    <h3 class="vacancy__subtitle">
+                        Что мы ожидаем от нашего кандидата:
+                    </h3>
+
+                    <ul>
+                        <li class="vacancy__text">
+                            Выполнение и разработку проектной документации систем отопления и вентиляции;
+                        </li>
+                        <li class="vacancy__text">
+                            Выдачу заданий смежным подразделениям;
+                        </li>
+                        <li class="vacancy__text">
+                            Согласование проектной документации со смежными специалистами и заказчиками;
+                        </li>
+                        <li class="vacancy__text">
+                            Проведение авторского надзора.
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="vacancy__item vacancy__block">
+                    <h3 class="vacancy__subtitle">
+                        Мы предлагаем:
+                    </h3>
+
+                    <ul>
+                        <li class="vacancy__text">
+                            конкурентную заработную плату (оговаривается на собеседовании, зависит от ваших навыков и опыта работы);
+                        </li>
+                        <li class="vacancy__text">
+                            участие в реализации перспективных и крупных строительных проектов;
+                        </li>
+                        <li class="vacancy__text">
+                            возможность профессионального роста;
+                        </li>
+                        <li class="vacancy__text">
+                            возможность обучения за счет компании;
+                        </li>
+                        <li class="vacancy__text">
+                            комфортные условия труда в современном офисе возле ст.м.
+                            Васильковская
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="resume">
+                <h2 class="resume__header">
+                    Надсилайте резюме на <span class="resume__link">hr@zim-group.ua</span>, або заповніть форму нижче
+                </h2>
+            </section>
+
+            <section class="contacts contacts--vacancy-page">
+                <div class="contacts__inner">
+                    <div class="contacts__container">
+                        <div class="contacts__form">
+                            <form action="" data-form>
+                                <div class="contacts__form-label-wrap">
+                                    <label class="contacts__form-label">
+                                        <span class="contacts__form-label-text">ПІБ</span>
+                                        <input class="contacts__form-input"
+                                               required
+                                               type="text">
+                                    </label>
+
+                                    <div class="validation-block"></div>
+                                </div>
+                                <div class="contacts__form-label-wrap">
+                                    <label class="contacts__form-label">
+                                        <span class="contacts__form-label-text">Номер телефону*</span>
+                                        <input class="contacts__form-input"
+                                               required
+                                               data-phone-validation
+                                               placeholder="+38(___) ___-__-__"
+                                               type="text">
+                                    </label>
+
+                                    <div class="validation-block"></div>
+                                </div>
+
+                                <div class="contacts__form-label-wrap">
+                                    <span class="contacts__form-label-text">Завантажте резюме</span>
+
+                                    <span class="progress-line-bg">
+                                        <span class="progress-line" data-progress-line></span>
+                                    </span>
+
+                                    <span class="progress-line-bg">
+                                        <span class="progress-line" data-progress-line></span>
+                                    </span>
+
+                                    <div class="contacts__download-wrap">
+                                        <a class="contacts__form-btn-download"
+                                           href="#"
+                                           download>Завантажити файл</a>
+
+                                        <span class="contacts__download-description">
+                                        Дозволяються файли до 25 мб
+                                    </span>
+                                    </div>
+                                </div>
+
+                                <div class="contacts__form-label-wrap">
+                                    <label class="contacts__form-label">
+                                        <span class="contacts__form-label-text">Повiдомлення</span>
+                                        <textarea class="contacts__form-textarea" name=""></textarea>
+                                    </label>
+                                </div>
+
+                                <button class="contacts__form-btn"
+                                        data-modal-callback-send
+                                        data-modal-target="#modal-callback"
+                                        type="submit">
+                                    Надіслати
+                                </button>
+                            </form>
+
+                            <p class="privacy-policy">Натискаючи кнопку “Надіслати” ви даєте згоду на обробку персональних
+                                даних згідно з нашою
+                                <a class="privacy-policy__link" href="#">політикою конфіденційности</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="about about--on-career-page">
-            <div class="about__inner">
-                <h3 class="about__caption">
-                    Про нашу команду
-                </h3>
-                <div class="about__content-wrap">
-                    <p class="about__content">
-                        ZimGroup - це повноцінна платформа професійного зростання, так як наша компанія, за допомогою
-                        організації профільних курсів, інтенсивних тренінгів, а також ротації кадрів, піклується про
-                        реалізацію потенціалу та підвищенні рівня кваліфікаційних якостей своїх співробітників.
-                    </p>
-                    <p class="about__content">
-                        У зв'язку з динамічним розвитком і розширенням спектра своєї діяльності, девелоперська компанія
-                        Zim Group проводить набір фахівців різних сфер, готових (бажаючих) стати частиною команди
-                        професіоналів.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="more-contacts more-contacts--career-page">
-            <div class="more-contacts__inner">
-                <h3 class="more-contacts__caption">
-                    Відкриті вакансії
-                </h3>
-
-                <ul class="more-contacts__list">
-                    <li class="more-contacts__item">
-                        <a class="more-contacts__btn" href="vacancy-page.html">
-                            Адміністратор офісу
-                        </a>
-                    </li>
-                    <li class="more-contacts__item">
-                        <a class="more-contacts__btn" href="vacancy-page.html">
-                            Головний бухгалтер
-                        </a>
-                    </li>
-                    <li class="more-contacts__item">
-                        <a class="more-contacts__btn" href="vacancy-page.html">
-                            Інженер проектувальник
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__inner">
@@ -333,8 +433,79 @@
     </footer>
 
     <div id="overlay"></div>
+
+    <div class="modal-send-success" id="modal-send-success" >
+        <div class="modal modal-send-success" id="send-success">
+            <button data-close-button class="modal__btn-close">
+                <span class="icon icon-close"></span>
+            </button>
+            <div class="modal__head">
+                <span class="icon icon-success"></span>
+                <div class="modal__title">
+                    Резюме успішно надіслано
+                </div>
+
+                <div class="modal__content">
+                    Ми ознайомимось з вашою кандидатурою, та якщо ви нам підходите, HR менеджер зв’яжеться з вами
+                </div>
+            </div>
+            <div class="modal__body">
+                <div data-close-button
+                     class="modal__body-btn-close">
+                    Закрити
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="../js/scripts.min.js"></script>
+
+<script>
+    let popup = document.getElementById('modal-send-success'),
+        popupToggle = document.querySelector('[data-modal-callback-send]'),
+        popupClose = document.querySelector('[data-close-button]');
+
+    popupToggle.onclick = function () {
+        popup.style.display = 'block';
+        $('body').toggleClass('popup-active');
+    };
+
+    popupClose.onclick = function () {
+        popup.style.display = 'none';
+        $('body').classList.remove('popup-active');
+    };
+
+    window.onclick = function (e) {
+        if(e.target === popup) {
+            popup.style.display = 'none';
+            $('body').toggleClass('popup-active');
+        }
+    }
+</script>
+
+<script>
+    function fileProgress () {
+        let elem = document.querySelectorAll('[data-progress-line]');
+
+        elem.forEach(elem => {
+           let width = 1,
+               id = setInterval(progressStatus, 25);
+
+            function progressStatus() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                }
+            }
+        })
+
+    }
+
+    fileProgress();
+</script>
+
 </body>
 </html>
