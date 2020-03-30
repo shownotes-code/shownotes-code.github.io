@@ -1,0 +1,13 @@
+{
+  "nav.about.project" : "Про проeкт",
+  "nav.choice.apartment": "Обрати Квартиру",
+  "nav.building" : "Будівництво",
+  "nav.contacts": "Контакти",
+  "nav.request.a.call": "Замовити здінок",
+  "main.block.header.title":"ЖК Forest Park",
+  "main.block.header.subtitle":"Магія лісу у вас вдома",
+  "main.block.text":"Житловий комплекс розташований в хвойному лісі Оболонського району міста Києва",
+  "main.block.documentation":"Документація",
+  "error.phone.carrier": "Оператор некоректний",
+  "error.phone.number": "Телефонний номер некоректний"
+}

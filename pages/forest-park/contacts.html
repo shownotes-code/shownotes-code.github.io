@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact page</title>
+
+    <link rel="icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="img/@1x/preview.jpg">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="header__inner">
+            <div class="logo-block">
+                <button class="logo-block__menu-btn" data-head-menu>
+                    <span class="burger"></span>
+                </button>
+
+                <div class="logo-wrap">
+                    <a class="logo__link" href="index.html">
+                        <img class="logo__img" src="images/logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="nav-bar nav-bar--header">
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__item">
+                        <button class="nav-bar__bnt active" data-i18n="nav.about.project">
+                            Про проект
+                        </button>
+                    </li>
+                    <li class="nav-bar__item">
+                        <button class="nav-bar__bnt" data-i18n="nav.choice.apartment">
+                            Обрати квартиру
+                        </button>
+                    </li>
+                    <li class="nav-bar__item">
+                        <button class="nav-bar__bnt" data-i18n="nav.building">
+                            Будівництво
+                        </button>
+                    </li>
+                    <li class="nav-bar__item">
+                        <a class="nav-bar__link" href="#" data-i18n="nav.contacts">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__btn-wrap">
+                <button class="header__btn-favorites">
+                    <span class="icon icon-star-white"></span>
+                </button>
+
+                <a class="header__btn-callback" href="#">
+                    <span class="icon icon-phone-white"></span>
+                </a>
+
+                <div class="callback-block">
+                    <a class="callback-block__link"
+                       href="#">(044) 299 42 81</a>
+
+                    <button class="callback-block__btn"
+                            data-i18n="nav.request.a.call"
+                            data-action="method"
+                            data-method="showRequestACall">
+                        Замовити дзвінок
+                    </button>
+                </div>
+
+                <div class="header__lang-block language-block">
+                    <label class="language-block__label">
+                        <input type="radio"
+                               class="language-block__input"
+                               checked
+                               name="lang-select"
+                               value="ua">
+
+                        <span class="language-block__text">UA</span>
+                    </label>
+
+                    <label class="language-block__label">
+                        <input type="radio"
+                               class="language-block__input"
+                               name="lang-select"
+                               value="ru">
+
+                        <span class="language-block__text">RU</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="content content--main">
+        <div id="map" style="height: 600px"></div>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2XqA2M75E0eOns6BTs_Xqs0yCASVpfHc&callback=initMap">
+        </script>
+    </main>
+</div>
+
+<script src="js/bundle.js"></script>
+
+<script>
+
+    function initMap() {
+        let uluru = {lat: 50.5669284, lng:30.4588395};
+        let el = document.getElementById('map');
+        let map = new google.maps.Map(el, {zoom: 15, center: uluru});
+        let marker = new google.maps.Marker({position: uluru, map: map});
+    }
+</script>
+</body>
+</html>
