@@ -208,7 +208,6 @@
                             нормативных материалов по проектированию.
                         </li>
                     </ul>
-
                 </div>
 
                 <div class="vacancy__item vacancy__block">
@@ -262,7 +261,7 @@
 
             <section class="resume">
                 <h2 class="resume__header">
-                    Надсилайте резюме на hr@zim-group.ua, або заповніть форму нижче
+                    Надсилайте резюме на <span class="resume__link">hr@zim-group.ua</span>, або заповніть форму нижче
                 </h2>
             </section>
 
@@ -292,6 +291,28 @@
                                     </label>
 
                                     <div class="validation-block"></div>
+                                </div>
+
+                                <div class="contacts__form-label-wrap">
+                                    <span class="contacts__form-label-text">Завантажте резюме</span>
+
+                                    <span class="progress-line-bg">
+                                        <span class="progress-line" data-progress-line></span>
+                                    </span>
+
+                                    <span class="progress-line-bg">
+                                        <span class="progress-line" data-progress-line></span>
+                                    </span>
+
+                                    <div class="contacts__download-wrap">
+                                        <a class="contacts__form-btn-download"
+                                           href="#"
+                                           download>Завантажити файл</a>
+
+                                        <span class="contacts__download-description">
+                                        Дозволяються файли до 25 мб
+                                    </span>
+                                    </div>
                                 </div>
 
                                 <div class="contacts__form-label-wrap">
@@ -412,9 +433,79 @@
     </footer>
 
     <div id="overlay"></div>
+
+    <div class="modal-send-success" id="modal-send-success" >
+        <div class="modal modal-send-success" id="send-success">
+            <button data-close-button class="modal__btn-close">
+                <span class="icon icon-close"></span>
+            </button>
+            <div class="modal__head">
+                <span class="icon icon-success"></span>
+                <div class="modal__title">
+                    Резюме успішно надіслано
+                </div>
+
+                <div class="modal__content">
+                    Ми ознайомимось з вашою кандидатурою, та якщо ви нам підходите, HR менеджер зв’яжеться з вами
+                </div>
+            </div>
+            <div class="modal__body">
+                <div data-close-button
+                     class="modal__body-btn-close">
+                    Закрити
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="../js/scripts.min.js"></script>
+
+<script>
+    let popup = document.getElementById('modal-send-success'),
+        popupToggle = document.querySelector('[data-modal-callback-send]'),
+        popupClose = document.querySelector('[data-close-button]');
+
+    popupToggle.onclick = function () {
+        popup.style.display = 'block';
+        $('body').toggleClass('popup-active');
+    };
+
+    popupClose.onclick = function () {
+        popup.style.display = 'none';
+        $('body').classList.remove('popup-active');
+    };
+
+    window.onclick = function (e) {
+        if(e.target === popup) {
+            popup.style.display = 'none';
+            $('body').toggleClass('popup-active');
+        }
+    }
+</script>
+
+<script>
+    function fileProgress () {
+        let elem = document.querySelectorAll('[data-progress-line]');
+
+        elem.forEach(elem => {
+           let width = 1,
+               id = setInterval(progressStatus, 25);
+
+            function progressStatus() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                }
+            }
+        })
+
+    }
+
+    fileProgress();
+</script>
 
 </body>
 </html>

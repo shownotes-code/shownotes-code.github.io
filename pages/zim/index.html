@@ -30,11 +30,12 @@
     <meta property="og:image" content="img/@1x/preview.jpg">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/preloader.css">
 </head>
 
 <body>
 
-<div class="preloader" style="display: none;">
+<div class="preloader">
     <img class="preloader__img" src="img/preloader/preloader-bg.jpg" alt="">
     <div class="preloader__container">
         <div class="preloader__box">
@@ -868,5 +869,17 @@
 
 
 <script src="js/scripts.min.js"></script>
+
+
+<script>
+    $( document ).ready(function() {
+        setTimeout(function(){
+            let preloader = $('.preloader');
+            preloader.remove(
+                preloader.fadeOut()
+            )
+        }, 3000);
+    });
+</script>
 </body>
 </html>
