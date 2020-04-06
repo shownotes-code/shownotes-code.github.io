@@ -48,7 +48,7 @@
 </div>
 
 <section class="hello-screen">
-    <nav style="display: none" class="hello-screen__nav-bar">
+    <nav class="hello-screen__nav-bar">
         <a class="hello-screen__nav-bar-logo" href="#">
             <img src="img/hello-screen/hello-screen-logo.svg" alt="">
         </a>
@@ -60,8 +60,10 @@
         </button>
     </nav>
 
-    <div class="">
-        <ul style="display: none" class="hello-screen__list">
+    <div class="hello-screen__list-wrap">
+        <img src="img/hello-screen/open-menu-bg.jpg" alt="">
+
+        <ul class="hello-screen__list">
             <li class="hello-screen__item">
                 <div class="hello-screen__item-img-wrap">
                     <img src="img/hello-screen/open-menu-ex1.jpg" alt="">
@@ -1049,9 +1051,24 @@
     });
 </script>
 
+
+
 <script>
+    // $(function(){
+    //     $(document).scroll(function(){
+    //         if($(this).scrollTop() >= $('header').offset().top) {
+    //             $("header").css("position","sticky");
+    //         } else {
+    //             $("header").css("position","static");
+    //         }
+    //     });
+    // });
+
+
     $('[data-hello-screen-menu]').click(function () {
         $(this).toggleClass('active');
+        $('.hello-screen__list-wrap').toggleClass('active');
+        $('body').toggleClass('body-stop');
     })
 </script>
 </body>
