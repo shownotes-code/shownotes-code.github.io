@@ -30,8 +30,47 @@
     <meta property="og:image" content="img/@1x/preview.jpg">
 
     <link rel="stylesheet" href="../css/main.css">
+
+    <style>
+
+
+        .swiper-container  {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-top {
+            height: 80%;
+            width: 200px;
+        }
+
+        .gallery-top .swiper-slide {
+            background-color: blue;
+            color: #fff;
+        }
+        .gallery-thumbs {
+            width: 1200px;
+            margin: 0 auto;
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+        .gallery-thumbs .swiper-slide {
+            min-width: 200px;;
+            height: 16px;
+            background-color: green;
+            opacity: 0.4;
+        }
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
+
+
 
 <div class="wrapper">
     <header>
@@ -396,252 +435,118 @@
                 </ul>
             </div>
         </section>
-        <section style="display: none" class="history">
+        <section class="history">
             <div class="history__inner">
+                <img src="../img/about-page/time-line-bg.jpg" alt="">
+
                 <h2 class="history__header">
                     Наша історія
                 </h2>
 
                 <div class="history__time-line">
-
                     <ul class="history__time-line-list">
                         <li class="history__time-line-item">
                             <label class="history__time-line-label">
                                 <input class="history__time-line-input" type="radio" name="time-line" checked>
                                 <span class="history__time-line-point"></span>
 
-
-                            </label>
-
-                            <div class="">
+                                <div class="history__time-line-text-wrap">
                                     <span class="history__time-line-caption">
                                         2014
                                     </span>
-                                <p class="history__time-line-text">
-                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу
-                                </p>
-                            </div>
-
+                                    <p class="history__time-line-text">
+                                        компанія розпочала свою діяльність
+                                    </p>
+                                </div>
+                            </label>
                         </li>
                         <li class="history__time-line-item">
                             <label class="history__time-line-label">
                                 <input class="history__time-line-input" type="radio" name="time-line">
                                 <span class="history__time-line-point"></span>
+                                <div class="history__time-line-text-wrap">
+                                    <span class="history__time-line-caption">
+                                        2015
+                                    </span>
+                                    <p class="history__time-line-text">
+                                        введено в експлуатацію ЖК Skyland і ЖК Sunlife
+                                    </p>
+                                </div>
                             </label>
-                            <div class="">
-                                <span class="history__time-line-caption">
-                                    2014
-                                </span>
-                                <p class="history__time-line-text">
-                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу
-                                </p>
-                            </div>
                         </li>
                         <li class="history__time-line-item">
                             <label class="history__time-line-label">
                                 <input class="history__time-line-input" type="radio" name="time-line">
                                 <span class="history__time-line-point"></span>
+                                <div class="history__time-line-text-wrap">
+                                    <span class="history__time-line-caption">
+                                        2015
+                                    </span>
+                                    <p class="history__time-line-text">
+                                        початок будівництва ЖК Parkland, створено власну обслуговуючу ораганізацію
+                                    </p>
+                                </div>
                             </label>
-                            <div class="">
-                                <span class="history__time-line-caption">
-                                    2014
-                                </span>
-                                <p class="history__time-line-text">
-                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу
-                                </p>
-                            </div>
                         </li>
                         <li class="history__time-line-item">
                             <label class="history__time-line-label">
                                 <input class="history__time-line-input" type="radio" name="time-line">
                                 <span class="history__time-line-point"></span>
+                                <div class="history__time-line-text-wrap">
+                                    <span class="history__time-line-caption">
+                                        2016
+                                    </span>
+                                    <p class="history__time-line-text">
+                                        здано першу чергу ЖК Parkland
+                                    </p>
+                                </div>
                             </label>
-                            <div class="">
-                                <span class="history__time-line-caption">
-                                    2014
-                                </span>
-                                <p class="history__time-line-text">
-                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу
-                                </p>
-                            </div>
                         </li>
                         <li class="history__time-line-item">
                             <label class="history__time-line-label">
                                 <input class="history__time-line-input" type="radio" name="time-line">
                                 <span class="history__time-line-point"></span>
+                                <div class="history__time-line-text-wrap">
+                                    <span class="history__time-line-caption">
+                                        2017
+                                    </span>
+                                    <p class="history__time-line-text">
+                                        заселено першу 1000 квартир
+                                    </p>
+                                </div>
                             </label>
-                            <div class="">
-                                <span class="history__time-line-caption">
-                                    2014
-                                </span>
-                                <p class="history__time-line-text">
-                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу
-                                </p>
-                            </div>
                         </li>
                         <li class="history__time-line-item">
                             <label class="history__time-line-label">
                                 <input class="history__time-line-input" type="radio" name="time-line">
                                 <span class="history__time-line-point"></span>
+                                <div class="history__time-line-text-wrap">
+                                    <span class="history__time-line-caption">
+                                        2018
+                                    </span>
+                                    <p class="history__time-line-text">
+                                        початок будівництва Paradise Avenue і Forest Park
+                                    </p>
+                                </div>
                             </label>
-                            <div class="">
-                                <span class="history__time-line-caption">
-                                    2014
-                                </span>
-                                <p class="history__time-line-text">
-                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу
-                                </p>
-                            </div>
                         </li>
                         <li class="history__time-line-item">
                             <label class="history__time-line-label">
                                 <input class="history__time-line-input" type="radio" name="time-line">
                                 <span class="history__time-line-point"></span>
+                                <div class="history__time-line-text-wrap">
+                                    <span class="history__time-line-caption">
+                                        2019
+                                    </span>
+                                    <p class="history__time-line-text">
+                                        здано перші будинки в Paradise Avenue
+                                    </p>
+                                </div>
                             </label>
-                            <div class="">
-                                <span class="history__time-line-caption">
-                                    2014
-                                </span>
-                                <p class="history__time-line-text">
-                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу
-                                </p>
-                            </div>
                         </li>
-
-<!--                        <li class="history__time-line-item">-->
-<!--                            <label class="history__time-line-label">-->
-<!--                                <input class="history__time-line-input" type="radio" name="time-line">-->
-<!--                                <span class="history__time-line-point"></span>-->
-<!--                            </label>-->
-<!--                            <div class="">-->
-<!--                                <span class="history__time-line-caption">-->
-<!--                                    2014-->
-<!--                                </span>-->
-<!--                                <p class="history__time-line-text">-->
-<!--                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        <li class="history__time-line-item">-->
-<!--                            <label class="history__time-line-label">-->
-<!--                                <input class="history__time-line-input" type="radio" name="time-line">-->
-<!--                                <span class="history__time-line-point"></span>-->
-<!--                            </label>-->
-<!--                            <div class="">-->
-<!--                                <span class="history__time-line-caption">-->
-<!--                                    2014-->
-<!--                                </span>-->
-<!--                                <p class="history__time-line-text">-->
-<!--                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </li>-->
-<!--                        <li class="history__time-line-item">-->
-<!--                            <label class="history__time-line-label">-->
-<!--                                <input class="history__time-line-input" type="radio" name="time-line">-->
-<!--                                <span class="history__time-line-point"></span>-->
-<!--                            </label>-->
-<!--                            <div class="">-->
-<!--                                <span class="history__time-line-caption">-->
-<!--                                    2014-->
-<!--                                </span>-->
-<!--                                <p class="history__time-line-text">-->
-<!--                                    Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </li>-->
                     </ul>
-
-
                 </div>
             </div>
-
-
-
-<!--            <div class="timeline-container timeline-theme-1">-->
-<!--                <div class="timeline js-timeline">-->
-<!--                    <div data-time="2017">your content or markup</div>-->
-<!--                    <div data-time="2016">your content or markup</div>-->
-<!--                    <div data-time="2015">your content or markup</div>-->
-<!--                    <div data-time="2014">your content or markup</div>-->
-<!--                    <div data-time="2013">your content or markup</div>-->
-<!--                </div>-->
-<!--            </div>&lt;!&ndash; /.timeline-container &ndash;&gt;-->
-
-<!--            <div class="timeline-container history__time-line timeline-theme-1">-->
-<!--                <div class="timeline js-timeline">-->
-<!--                    <div data-time class="history__time-line-point">-->
-<!--                        <label class="history__time-line-label">-->
-<!--                            <input class="history__time-line-input" type="radio" name="time-line">-->
-<!--                            <span class="history__time-line-point"></span>-->
-<!--                        </label>-->
-<!--                        <div class="">-->
-<!--                                <span class="history__time-line-caption">-->
-<!--                                    2014-->
-<!--                                </span>-->
-<!--                            <p class="history__time-line-text">-->
-<!--                                Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div data-time="2016">-->
-<!--                        <label class="history__time-line-label">-->
-<!--                            <input class="history__time-line-input" type="radio" name="time-line">-->
-<!--                            <span class="history__time-line-point"></span>-->
-<!--                        </label>-->
-<!--                        <div class="">-->
-<!--                                <span class="history__time-line-caption">-->
-<!--                                    2014-->
-<!--                                </span>-->
-<!--                            <p class="history__time-line-text">-->
-<!--                                Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div data-time="2015">-->
-<!--                        <label class="history__time-line-label">-->
-<!--                            <input class="history__time-line-input" type="radio" name="time-line">-->
-<!--                            <span class="history__time-line-point"></span>-->
-<!--                        </label>-->
-<!--                        <div class="">-->
-<!--                                <span class="history__time-line-caption">-->
-<!--                                    2014-->
-<!--                                </span>-->
-<!--                            <p class="history__time-line-text">-->
-<!--                                Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div data-time="2014">-->
-<!--                        <label class="history__time-line-label">-->
-<!--                            <input class="history__time-line-input" type="radio" name="time-line">-->
-<!--                            <span class="history__time-line-point"></span>-->
-<!--                        </label>-->
-<!--                        <div class="">-->
-<!--                                <span class="history__time-line-caption">-->
-<!--                                    2014-->
-<!--                                </span>-->
-<!--                            <p class="history__time-line-text">-->
-<!--                                Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div data-time="2013">-->
-<!--                        <label class="history__time-line-label">-->
-<!--                            <input class="history__time-line-input" type="radio" name="time-line">-->
-<!--                            <span class="history__time-line-point"></span>-->
-<!--                        </label>-->
-<!--                        <div class="">-->
-<!--                                <span class="history__time-line-caption">-->
-<!--                                    2014-->
-<!--                                </span>-->
-<!--                            <p class="history__time-line-text">-->
-<!--                                Компанія Zim Capital Group розпочала свою роботу як девелоперська компанія повного циклу-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
         </section>
         <section class="content__item card-container card-container--projects-page card-container--about-page">
             <div class="card-container__inner">
@@ -1073,5 +978,6 @@
         }
     }
 </script>
+
 </body>
 </html>

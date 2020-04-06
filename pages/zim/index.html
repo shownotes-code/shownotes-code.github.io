@@ -47,6 +47,173 @@
     </div>
 </div>
 
+<section class="hello-screen">
+    <nav style="display: none" class="hello-screen__nav-bar">
+        <a class="hello-screen__nav-bar-logo" href="#">
+            <img src="img/hello-screen/hello-screen-logo.svg" alt="">
+        </a>
+
+        <button data-hello-screen-menu class="hello-screen__nav-bar-btn">
+            <span class="hello-screen__nav-bar-btn-text">
+                Menu
+            </span>
+        </button>
+    </nav>
+
+    <div class="">
+        <ul style="display: none" class="hello-screen__list">
+            <li class="hello-screen__item">
+                <div class="hello-screen__item-img-wrap">
+                    <img src="img/hello-screen/open-menu-ex1.jpg" alt="">
+                    <span class="hello-screen__item-text">
+                    Проекти
+                </span>
+                </div>
+            </li>
+            <li class="hello-screen__item">
+                <div class="hello-screen__item-img-wrap">
+                    <img src="img/hello-screen/open-menu-ex2.jpg" alt="">
+                    <span class="hello-screen__item-text">
+                    Про компанію
+                </span>
+                </div>
+            </li>
+            <li class="hello-screen__item">
+                <div class="hello-screen__item-img-wrap">
+                    <img src="img/hello-screen/open-menu-ex3.jpg" alt="">
+                    <span class="hello-screen__item-text">
+                    Комерційна нерухомість
+                </span>
+                </div>
+            </li>
+            <li class="hello-screen__item">
+                <div class="hello-screen__item-img-wrap">
+                    <img src="img/hello-screen/open-menu-ex4.jpg" alt="">
+                    <span class="hello-screen__item-text">
+                    Послуги
+                </span>
+                </div>
+            </li>
+            <li class="hello-screen__item">
+                <div class="hello-screen__item-img-wrap">
+                    <img src="img/hello-screen/open-menu-ex5.jpg" alt="">
+                    <span class="hello-screen__item-text">
+                    Прес-центр
+                </span>
+                </div>
+            </li>
+            <li class="hello-screen__item">
+                <div class="hello-screen__item-img-wrap">
+                    <img src="img/hello-screen/open-menu-ex6.jpg" alt="">
+                    <span class="hello-screen__item-text">
+                    Контакти
+                </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <section class="hello-screen__section">
+        <img src="img/hello-screen/ex1.jpg" alt="">
+
+        <div class="hello-screen__section-inner">
+            <h2 class="hello-screen__section-caption">
+                ZIM Group Думаємо спочатку про тебе
+            </h2>
+
+            <a class="hello-screen__section-btn" href="#">
+                <span class="hello-screen__section-btn-text">
+                    Про компанію
+                </span>
+                <span class="status"></span>
+            </a>
+        </div>
+    </section>
+    <section class="hello-screen__section">
+        <img src="img/hello-screen/ex2.jpg" alt="">
+
+        <div class="hello-screen__section-inner">
+            <h2 class="hello-screen__section-caption">
+                Оберіть квартиру своєї мрії
+            </h2>
+
+            <a class="hello-screen__section-btn" href="#">
+                <span class="hello-screen__section-btn-text">
+                    Проекти
+                </span>
+                <span class="status"></span>
+            </a>
+        </div>
+    </section>
+    <section class="hello-screen__section">
+        <img src="img/hello-screen/ex3.jpg" alt="">
+
+        <div class="hello-screen__section-inner">
+            <h2 class="hello-screen__section-caption">
+                Про компанію
+            </h2>
+
+            <a class="hello-screen__section-btn" href="#">
+                <span class="hello-screen__section-btn-text">
+                    Детальніше
+                </span>
+                <span class="status"></span>
+            </a>
+        </div>
+    </section>
+    <section class="hello-screen__section">
+        <img src="img/hello-screen/ex4.jpg" alt="">
+
+        <div class="hello-screen__section-inner">
+            <h2 class="hello-screen__section-caption">
+                Офіс для будь-яких потреб бізнесу
+            </h2>
+
+            <a class="hello-screen__section-btn" href="#">
+                <span class="hello-screen__section-btn-text">
+                    Проекти
+                </span>
+                <span class="status"></span>
+            </a>
+        </div>
+    </section>
+    <section class="hello-screen__section">
+        <img src="img/hello-screen/ex5.jpg" alt="">
+
+        <div class="hello-screen__section-inner">
+            <h2 class="hello-screen__section-caption">
+                Додаткові послуги для вашої зручності
+            </h2>
+
+            <a class="hello-screen__section-btn" href="#">
+                <span class="hello-screen__section-btn-text">
+                    Детальніше
+                </span>
+                <span class="status"></span>
+            </a>
+        </div>
+    </section>
+    <section class="hello-screen__section">
+        <img src="img/hello-screen/ex6.jpg" alt="">
+
+        <div class="hello-screen__section-inner">
+            <h2 class="hello-screen__section-caption">
+                Новини і події компанії
+            </h2>
+
+            <a class="hello-screen__section-btn" href="#">
+                <span class="hello-screen__section-btn-text">
+                    Пресцентр
+                </span>
+                <span class="status"></span>
+            </a>
+        </div>
+    </section>
+</section>
+
+
+
 <div class="wrapper">
     <header>
         <div class="header__nav-bar">
@@ -56,7 +223,7 @@
                     <span class="logo__mobile-btn-text">Меню</span>
                 </button>
 
-                <a class="logo__link logo__link--header" href="./index.html">
+                <a class="logo__link logo__link--header" href="pages/hello.html">
                     <img class="logo__img" src="img/logo.svg" alt="">
                 </a>
 
@@ -871,13 +1038,21 @@
 
 <script>
     $( document ).ready(function() {
+        $('body').toggleClass('body-stop');
         setTimeout(function(){
             let preloader = $('.preloader');
             preloader.remove(
                 preloader.fadeOut()
-            )
+            );
+            $('body').toggleClass('body-stop');
         }, 3000);
     });
+</script>
+
+<script>
+    $('[data-hello-screen-menu]').click(function () {
+        $(this).toggleClass('active');
+    })
 </script>
 </body>
 </html>

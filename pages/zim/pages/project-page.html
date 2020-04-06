@@ -240,34 +240,46 @@
                 <div class="swiper-container project-gallery">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide project-gallery__slide">
-                            <div class="project-gallery__slide-img-wrap">
-                                <img src="../img/project-page/gallery-ex1.jpg" alt="">
-                            </div>
+                            <a class="project-gallery__slide-img-wrap"
+                               href="../img/project-page/header-bg.jpg"
+                               data-fancybox>
+                                <img src="../img/project-page/gallery-ex1.jpg" alt="" />
+                            </a>
                         </div>
                         <div class="swiper-slide project-gallery__slide">
-                            <div class="project-gallery__slide-img-wrap">
+                            <a class="project-gallery__slide-img-wrap"
+                               href="../img/project-page/commercial-block-bg.jpg"
+                               data-fancybox>
                                 <img src="../img/project-page/gallery-ex2.jpg" alt="">
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide project-gallery__slide">
-                            <div class="project-gallery__slide-img-wrap">
+                            <a class="project-gallery__slide-img-wrap"
+                               href="../img/project-page/header-bg.jpg"
+                               data-fancybox>
                                 <img src="../img/project-page/gallery-ex3.jpg" alt="">
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide project-gallery__slide">
-                            <div class="project-gallery__slide-img-wrap">
+                            <a class="project-gallery__slide-img-wrap"
+                               href="../img/project-page/header-bg.jpg"
+                               data-fancybox>
                                 <img src="../img/project-page/gallery-ex1.jpg" alt="">
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide project-gallery__slide">
-                            <div class="project-gallery__slide-img-wrap">
+                            <a class="project-gallery__slide-img-wrap"
+                               href="../img/project-page/header-bg.jpg"
+                               data-fancybox>
                                 <img src="../img/project-page/gallery-ex2.jpg" alt="">
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide project-gallery__slide">
-                            <div class="project-gallery__slide-img-wrap">
+                            <a class="project-gallery__slide-img-wrap"
+                               href="../img/project-page/header-bg.jpg"
+                               data-fancybox>
                                 <img src="../img/project-page/gallery-ex3.jpg" alt="">
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <!-- Add Arrows -->
@@ -880,8 +892,25 @@
 
 <script src="../js/scripts.min.js"></script>
 
+<!-- Initialize Swiper -->
 <script>
-
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
 </script>
 </body>
 </html>
