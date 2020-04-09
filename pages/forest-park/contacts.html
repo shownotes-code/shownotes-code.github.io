@@ -119,33 +119,60 @@
         </div>
     </header>
     <main class="content content--contact">
-        <div id="map" class="map"></div>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2XqA2M75E0eOns6BTs_Xqs0yCASVpfHc&callback=initMap">
-        </script>
+<!--        <div id="map" class="map"></div>-->
+<!--        <script async defer-->
+<!--                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2XqA2M75E0eOns6BTs_Xqs0yCASVpfHc&callback=initMap">-->
+<!--        </script>-->
 
         <div class="content__inner">
-            <div class="main-block">
-                <span class="main-block__pre-header">
-                    ЖК Forest Park
+            <div class="contact">
+                <h2 class="contact__header">
+                    Контакти
+                </h2>
+
+                <span class="contact__text">
+                    Якщо у вас виникли питання - зв’яжiться з нами, або заповнiть форму зворотнього зв’язку
                 </span>
 
-                <h1 class="main-block__header">
-                    Магія лісу у вас вдома
-                </h1>
+                <div class="contact__list-wrap">
+                    <ul class="contact__list">
+                        <li class="contact__item">
+                            <span class="contact__item-caption">Графік роботи</span>
+                            <span class="contact__item-text">пн.-сб. с 10-00 до 20-00</span>
+                            <span class="contact__item-text">нд. з 10-00 до 18-00</span>
+                        </li>
+                        <li class="contact__item">
+                            <span class="contact__item-caption">Адреса</span>
+                            <span class="contact__item-text">Київ, Дніпроводська 1</span>
+                        </li>
+                        <li class="contact__item">
+                            <span class="contact__item-caption">Телефон</span>
+                            <span class="contact__item-text">+38 (044) 123 12 21</span>
+                        </li>
+                        <li class="contact__item">
+                            <span class="contact__item-caption">Email</span>
+                            <span class="contact__item-text">info@forestpark.com.ua</span>
+                        </li>
+                    </ul>
+                    <form class="contact__form">
+                        <label class="modal-body__label">
+                            <span class="modal-body__label-text">
+                                Номер телефону *
+                            </span>
+                            <input class="modal-body__label-input"
+                                   type="text"
+                                   placeholder="+38(___)___-__-__"
+                                   autocomplete="off">
+                        </label>
+                        <label class="modal-body__label">
+                            <span class="modal-body__label-text">
+                                Повідомлення
+                            </span>
+                            <textarea class="contact__textarea"></textarea>
+                        </label>
 
-                <p class="main-block__text">
-                    Житловий комплекс розташований в хвойному лісі Оболонського району міста Києва
-                </p>
-
-                <div class="main-block__btn-wrap">
-                    <a class="main-block__btn-link" href="#">
-                        <img src="images/zim-logo.svg" alt="">
-                    </a>
-
-                    <a class="main-block__btn" href="#">
-                        Документація
-                    </a>
+                        <button class="modal-body__btn">Надіслати</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -156,15 +183,14 @@
                 <a href="./index.html">
                     <img class="logo"
                          alt=""
-                         src="/images/footer/logo-footer.svg">
+                         src="images/footer/logo-footer.svg">
                 </a>
             </div>
 
             <nav class="nav-bar nav-bar--footer">
                 <ul class="nav-bar__list">
                     <li class="nav-bar__item">
-                        <h4 class="nav-bar__caption"
-                            data-i18n="nav.about.project">
+                        <h4 class="nav-bar__caption">
                             Про проект
                         </h4>
 
@@ -187,8 +213,7 @@
                         </ul>
                     </li>
                     <li class="nav-bar__item">
-                        <h4 class="nav-bar__caption"
-                            data-i18n="nav.choice.apartment">
+                        <h4 class="nav-bar__caption">
                             Обрати квартиру
                         </h4>
 
@@ -234,7 +259,6 @@
                 </a>
 
                 <button class="callback-block__btn"
-                        data-i18n="nav.request.a.call"
                         data-action="method"
                         data-method="showRequestACall">
                     Замовити дзвінок
@@ -254,12 +278,12 @@
 
 <script>
 
-    function initMap() {
-        let uluru = {lat: 50.5669284, lng:30.4588395};
-        let el = document.getElementById('map');
-        let map = new google.maps.Map(el, {zoom: 15, center: uluru});
-        let marker = new google.maps.Marker({position: uluru, map: map});
-    }
+    // function initMap() {
+    //     let uluru = {lat: 50.5669284, lng:30.4588395};
+    //     let el = document.getElementById('map');
+    //     let map = new google.maps.Map(el, {zoom: 15, center: uluru});
+    //     let marker = new google.maps.Marker({position: uluru, map: map});
+    // }
 </script>
 </body>
 </html>
