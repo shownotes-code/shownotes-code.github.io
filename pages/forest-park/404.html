@@ -28,12 +28,95 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:image" content="img/@1x/preview.jpg">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
+        <div class="header__inner">
+            <div class="logo-block">
+                <button class="logo-block__menu-btn" data-head-menu>
+                    <span class="burger"></span>
+                </button>
 
+                <div class="burger-click-region">
+                    <span class="burger-menu-piece"></span>
+                    <span class="burger-menu-piece"></span>
+                    <span class="burger-menu-piece"></span>
+                </div>
+
+                <div class="logo-wrap">
+                    <a class="logo__link" href="index.html">
+                        <img class="logo__img" src="images/logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="nav-bar nav-bar--header">
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__item">
+                        <button class="nav-bar__bnt active">
+                            Про проект
+                        </button>
+                    </li>
+                    <li class="nav-bar__item">
+                        <button class="nav-bar__bnt">
+                            Обрати квартиру
+                        </button>
+                    </li>
+                    <li class="nav-bar__item">
+                        <button class="nav-bar__bnt">
+                            Будівництво
+                        </button>
+                    </li>
+                    <li class="nav-bar__item">
+                        <a class="nav-bar__link" href="contacts.html" >Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__btn-wrap">
+                <button class="header__btn-favorites">
+                    <span class="icon icon-star-white"></span>
+                </button>
+
+                <a class="header__btn-callback" href="#">
+                    <span class="icon icon-phone-white"></span>
+                </a>
+
+                <div class="callback-block">
+                    <a class="callback-block__link"
+                       href="#">(044) 299 42 81</a>
+
+                    <button class="callback-block__btn"
+                            data-action="method"
+                            data-method="showRequestACall">
+                        Замовити дзвінок
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__lang-block language-block">
+                <label class="language-block__label">
+                    <input type="radio"
+                           class="language-block__input"
+                           checked
+                           name="lang-select"
+                           value="ua">
+
+                    <span class="language-block__text">UA</span>
+                </label>
+
+                <label class="language-block__label">
+                    <input type="radio"
+                           class="language-block__input"
+                           name="lang-select"
+                           value="ru">
+
+                    <span class="language-block__text">RU</span>
+                </label>
+            </div>
+        </div>
     </header>
     <main class="content content--not-found">
         <div class="not-found">
@@ -61,7 +144,7 @@
                 <a href="./index.html">
                     <img class="logo"
                          alt=""
-                         src="images/footer/logo-footer.svg">
+                         src="/images/footer/logo-footer.svg">
                 </a>
             </div>
 
@@ -154,6 +237,6 @@
         </div>
     </footer>
 </div>
-<script src="js/bundle.js"></script>
+<!--<script src="/js/bundle.js"></script>-->
 </body>
 </html>
