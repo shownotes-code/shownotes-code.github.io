@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact page</title>
+    <title>Developer</title>
 
     <link rel="icon" href="images/favicon/favicon.png">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
 <div class="wrapper">
     <header class="header">
         <div class="header__inner">
@@ -268,59 +267,75 @@
             </ul>
         </div>
     </header>
-    <main class="content content--contact">
-        <div class="content__inner">
-            <div class="contact">
-                <h2 class="contact__header">
-                    Контакти
-                </h2>
+    <main class="content content--developer">
+        <div class="developer-wrap">
+            <div class="developer-wrap__content">
+                <h1 class="developer__header">
+                    Забудовник Zim Group
+                </h1>
 
-                <span class="contact__text">
-                    Якщо у вас виникли питання - зв’яжiться з нами, або заповнiть форму зворотнього зв’язку
-                </span>
+                <a class="developer__link" href="#">zim-group.com.ua</a>
 
-                <div class="contact__list-wrap">
-                    <ul class="contact__list">
-                        <li class="contact__item">
-                            <span class="contact__item-caption">Графік роботи</span>
-                            <span class="contact__item-text">пн.-сб. с 10-00 до 20-00</span>
-                            <span class="contact__item-text">нд. з 10-00 до 18-00</span>
-                        </li>
-                        <li class="contact__item">
-                            <span class="contact__item-caption">Адреса</span>
-                            <span class="contact__item-text">Київ, Дніпроводська 1</span>
-                        </li>
-                        <li class="contact__item">
-                            <span class="contact__item-caption">Телефон</span>
-                            <span class="contact__item-text">+38 (044) 123 12 21</span>
-                        </li>
-                        <li class="contact__item">
-                            <span class="contact__item-caption">Email</span>
-                            <span class="contact__item-text">info@forestpark.com.ua</span>
-                        </li>
-                    </ul>
-                    <form class="contact__form">
-                        <label class="modal-body__label">
-                            <span class="modal-body__label-text">
-                                Номер телефону *
-                            </span>
-                            <input class="modal-body__label-input"
-                                   type="text"
-                                   placeholder="+38(___)___-__-__"
-                                   autocomplete="off">
-                        </label>
-                        <label class="modal-body__label">
-                            <span class="modal-body__label-text">
-                                Повідомлення
-                            </span>
-                            <textarea class="contact__textarea"></textarea>
-                        </label>
-
-                        <button class="modal-body__btn">Надіслати</button>
-                    </form>
-                </div>
+                <p class="developer__text">
+                    Головний принцип нашої роботи - безкомпромісний підхід до якості об'єктів, що зводяться. У
+                    будівництві ми використовуємо тільки кращі рішення, доступні на даний момент, починаючи з етапу
+                    проектування і закінчуючи благоустроєм території. Висока якість будівництва досягається завдяки
+                    використанню сучасних будівельних матеріалів і технологій, а також завдяки застосуванню процедур
+                    контролю на всіх етапах будівництва.
+                </p>
+            </div>
+            <div class="developer-wrap__img-wrap">
+                <img src="images/developer-page/zim-logo.svg" alt="">
             </div>
         </div>
+
+        <section class="developer__list">
+            <h2 class="developer__caption">Інші проекти забудовника</h2>
+        </section>
+
+        <section class="developer__contact">
+            <div class="developer__contact-inner">
+                <h2 class="developer__caption">Контакти забудовника</h2>
+
+                <ul class="developer__contact-list">
+                    <li class="developer__contact-item">
+                        <span class="developer__contact-label">Адреса офісу</span>
+                        <span class="developer__contact-text">
+                                м.Київ, перевулок Охтирський, будинок 7, корпус 3, офіс 3-101
+                            </span>
+                    </li>
+
+                    <li class="developer__contact-item">
+                        <span class="developer__contact-label">Телефон</span>
+                        <span class="developer__contact-text">
+                                (067) 466 28 38
+                            </span>
+                    </li>
+
+                    <li class="developer__contact-item">
+                        <span class="developer__contact-label">Email</span>
+                        <span class="developer__contact-text">
+                                office.zcg@ukr.net
+                            </span>
+                    </li>
+
+                    <li class="developer__contact-item">
+                        <span class="developer__contact-label">Відділ маркетингу</span>
+                        <span class="developer__contact-text">
+                                marketing@zim-capital.com
+                            </span>
+                    </li>
+
+                    <li class="developer__contact-item">
+                        <span class="developer__contact-label">Відділ постачання</span>
+                        <span class="developer__contact-text">
+                                marketing@zim-capital.com
+                            </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
     </main>
     <footer class="footer">
         <div class="footer__inner">
@@ -378,8 +393,7 @@
                         </ul>
                     </li>
                     <li class="nav-bar__item">
-                        <h4 class="nav-bar__caption"
-                            data-i18n="nav.building">
+                        <h4 class="nav-bar__caption">
                             Будівництво
                         </h4>
 
@@ -420,6 +434,5 @@
 </div>
 
 <script src="js/bundle.js"></script>
-
 </body>
 </html>

@@ -35,7 +35,7 @@
     <header class="header">
         <div class="header__inner">
             <div class="logo-block">
-                <button class="logo-block__menu-btn" data-head-menu>
+                <button data-logo-menu-btn class="logo-block__menu-btn" data-head-menu>
                     <span class="burger"></span>
                 </button>
 
@@ -55,11 +55,11 @@
             <nav class="nav-bar nav-bar--header">
                 <ul class="nav-bar__list">
                     <li class="nav-bar__item">
-                        <button class="nav-bar__bnt active">
+                        <button data-nav-bar-btn class="nav-bar__bnt">
                             Про проект
                         </button>
 
-                        <ul style="display: none;" class="nav-bar__links-list">
+                        <ul class="nav-bar__links-list">
                             <li class="nav-bar__links-item">
                                 <a class="nav-bar__links"
                                    href="about.html">Про магію ліcу</a>
@@ -87,14 +87,52 @@
                         </ul>
                     </li>
                     <li class="nav-bar__item">
-                        <button class="nav-bar__bnt">
+                        <button data-nav-bar-btn class="nav-bar__bnt">
                             Обрати квартиру
                         </button>
+
+                        <ul class="nav-bar__links-list">
+                            <li class="nav-bar__links-item">
+                                <a class="nav-bar__links"
+                                   href="404.html">Обрати на генплані </a>
+                            </li>
+                            <li class="nav-bar__links-item">
+                                <a class="nav-bar__links"
+                                   href="#">Підбір за параметрами </a>
+                            </li>
+                            <li class="nav-bar__links-item">
+                                <a class="nav-bar__links"
+                                   href="#">1-кімнатні квартири</a>
+                            </li>
+                            <li class="nav-bar__links-item">
+                                <a class="nav-bar__links"
+                                   href="#">2-кімнатні квартири</a>
+                            </li>
+                            <li class="nav-bar__links-item">
+                                <a class="nav-bar__links"
+                                   href="#">3-кімнатні квартири</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-bar__item">
-                        <button class="nav-bar__bnt">
+                        <button data-nav-bar-btn class="nav-bar__bnt">
                             Будівництво
                         </button>
+
+                        <ul class="nav-bar__links-list">
+                            <li class="nav-bar__links-item">
+                                <a class="nav-bar__links"
+                                   href="developer.html">Хід будівництва</a>
+                            </li>
+                            <li class="nav-bar__links-item">
+                                <a class="nav-bar__links"
+                                   href="construction.html">Забудовник</a>
+                            </li>
+                            <li class="nav-bar__links-item">
+                                <a class="nav-bar__links"
+                                   href="documents.html">Документи</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-bar__item">
                         <a class="nav-bar__link" href="contacts.html" >Контакти</a>
@@ -143,6 +181,91 @@
                     <span class="language-block__text">RU</span>
                 </label>
             </div>
+        </div>
+
+        <div class="nav-bar nav-bar--mobile">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__caption">
+                        Про проект
+                    </h4>
+
+                    <ul class="nav-bar__links-list-mobile">
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="about.html">Про магію ліcу</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">Переваги</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">Інфраструктура</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">Умови придбання</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">Комерційна нерухомість</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__caption">
+                        Обрати квартиру
+                    </h4>
+
+                    <ul class="nav-bar__links-list-mobile">
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="404.html">Обрати на генплані </a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">Підбір за параметрами </a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">1-кімнатні квартири</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">2-кімнатні квартири</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">3-кімнатні квартири</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__caption">
+                        Будівництво
+                    </h4>
+
+                    <ul class="nav-bar__links-list-mobile">
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="404.html">Хід будівництва</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">Забудовник</a>
+                        </li>
+                        <li class="nav-bar__links-item">
+                            <a class="nav-bar__links"
+                               href="#">Документи</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </header>
     <main class="content content--main">
