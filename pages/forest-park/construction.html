@@ -527,44 +527,25 @@
         }
     });
 
-    // function progress() {
-    //     let elem = document.getElementById('progress-line'),
-    //         width = 1,
-    //         id = setInterval(progressStatus, 10);
-    //
-    //     function progressStatus() {
-    //         if(width >= 100) {
-    //             clearInterval(id)
-    //         } else {
-    //             width++;
-    //             elem.style.width = width + '%';
-    //         }
-    //     }
-    // }
-    //
-    // progress();
-
     $('.construction__preview-btn').on('click', function () {
             $.fancybox.open([
-                {src  : 'images/about-page/ex1.jpg',},
-                {src  : 'images/about-page/ex2.jpg',},
-                {src  : 'images/about-page/ex3.jpg',},
+                {src  : 'images/about-page/ex1.jpg'},
+                {src  : 'images/about-page/ex2.jpg'},
+                {src  : 'images/about-page/ex3.jpg'},
                 {src  : 'images/about-page/ex4.jpg'},
             ], {
                 loop : true,
             });
     });
 
-
     $('.construction__slide-item-img-wrap').on('click', function () {
         $.fancybox.open([
-            {src  : 'images/about-page/ex1.jpg',},
-            {src  : 'images/about-page/ex2.jpg',},
-            {src  : 'images/about-page/ex3.jpg',},
+            {src  : 'images/about-page/ex1.jpg'},
+            {src  : 'images/about-page/ex2.jpg'},
+            {src  : 'images/about-page/ex3.jpg'},
             {src  : 'images/about-page/ex4.jpg'},
         ]);
     });
-
 </script>
 
 </body>
