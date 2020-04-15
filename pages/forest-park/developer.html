@@ -27,6 +27,7 @@
 
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -121,11 +122,11 @@
                         <ul class="nav-bar__links-list">
                             <li class="nav-bar__links-item">
                                 <a class="nav-bar__links"
-                                   href="developer.html">Хід будівництва</a>
+                                   href="construction.html">Хід будівництва</a>
                             </li>
                             <li class="nav-bar__links-item">
                                 <a class="nav-bar__links"
-                                   href="construction.html">Забудовник</a>
+                                   href="developer.html">Забудовник</a>
                             </li>
                             <li class="nav-bar__links-item">
                                 <a class="nav-bar__links"
@@ -252,15 +253,15 @@
                     <ul class="nav-bar__links-list-mobile">
                         <li class="nav-bar__links-item">
                             <a class="nav-bar__links"
-                               href="404.html">Хід будівництва</a>
+                               href="construction.html">Хід будівництва</a>
                         </li>
                         <li class="nav-bar__links-item">
                             <a class="nav-bar__links"
-                               href="#">Забудовник</a>
+                               href="developer.html">Забудовник</a>
                         </li>
                         <li class="nav-bar__links-item">
                             <a class="nav-bar__links"
-                               href="#">Документи</a>
+                               href="documents.html">Документи</a>
                         </li>
                     </ul>
                 </li>
@@ -290,7 +291,79 @@
         </div>
 
         <section class="developer__list">
-            <h2 class="developer__caption">Інші проекти забудовника</h2>
+
+            <div class="developer__list-inner">
+                <h2 class="developer__caption">Інші проекти забудовника</h2>
+
+                <div class="swiper-container developer__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide developer__slide-item developer__slide-item--two-in">
+                            <a href="#">
+                                <img src="images/developer-page/ex1.jpg" alt="">
+                            </a>
+
+                            <a href="#">
+                                <img src="images/developer-page/ex2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide developer__slide-item developer__slide-item--two-in">
+                            <a href="#">
+                                <img src="images/developer-page/ex3.jpg" alt="">
+                            </a>
+
+                            <a href="#">
+                                <img src="images/developer-page/ex4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide developer__slide-item developer__slide-item--vertical">
+                            <a href="#">
+                                <img src="images/developer-page/ex5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide developer__slide-item developer__slide-item--vertical">
+                            <a href="#">
+                                <img src="images/developer-page/ex6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide developer__slide-item developer__slide-item--horizontal">
+                            <a href="#">
+                                <img src="images/developer-page/ex7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide developer__slide-item developer__slide-item--horizontal">
+                            <a href="#">
+                                <img src="images/developer-page/ex8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide developer__slide-item developer__slide-item--two-in">
+                            <a href="#">
+                                <img src="images/developer-page/ex3.jpg" alt="">
+                            </a>
+
+                            <a href="#">
+                                <img src="images/developer-page/ex4.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#12B259" fill-opacity="0.8"/>
+                        <path d="M21.5538 26.4456C21.3301 26.371 21.1561 26.2405 21.0878 25.9982C21.0381 25.8055 21.0754 25.6377 21.1872 25.4762C21.2245 25.4202 21.2742 25.3767 21.3239 25.327C22.9147 23.7362 24.5118 22.1392 26.1026 20.5484C26.1337 20.5173 26.1585 20.4862 26.2144 20.4303C26.1709 20.3992 26.1274 20.3806 26.0964 20.3495C24.4993 18.7525 22.8961 17.1554 21.2991 15.5584C21.0567 15.3161 21.0008 15.0551 21.1375 14.8003C21.3053 14.4709 21.7341 14.3715 22.0261 14.5952C22.0758 14.6325 22.1193 14.676 22.1628 14.7195C23.9152 16.4657 25.6614 18.2181 27.4138 19.9704C27.7431 20.2998 27.7431 20.6291 27.4138 20.9585C25.6925 22.6798 23.9711 24.3949 22.256 26.1162C22.1193 26.2529 21.9826 26.3896 21.79 26.4518C21.7092 26.4456 21.6284 26.4456 21.5538 26.4456Z" fill="white"/>
+                        <path d="M12.2578 20.449C12.2578 20.741 12.4939 20.9772 12.786 20.9772L26.2396 20.9772L26.2396 19.9208L12.786 19.9208C12.4939 19.9208 12.2578 20.1569 12.2578 20.449Z" fill="white"/>
+                    </svg>
+
+                </div>
+                <div class="swiper-button-prev">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="#12B259" fill-opacity="0.8"/>
+                        <path d="M18.4462 13.5544C18.6699 13.629 18.8439 13.7595 18.9122 14.0018C18.9619 14.1945 18.9246 14.3623 18.8128 14.5238C18.7755 14.5798 18.7258 14.6233 18.6761 14.673C17.0853 16.2638 15.4882 17.8608 13.8974 19.4516C13.8663 19.4827 13.8415 19.5138 13.7856 19.5697C13.8291 19.6008 13.8726 19.6194 13.9036 19.6505C15.5007 21.2475 17.1039 22.8446 18.7009 24.4416C18.9433 24.6839 18.9992 24.9449 18.8625 25.1997C18.6947 25.5291 18.2659 25.6285 17.9739 25.4048C17.9242 25.3675 17.8807 25.324 17.8372 25.2805C16.0848 23.5343 14.3386 21.7819 12.5862 20.0296C12.2569 19.7002 12.2569 19.3709 12.5862 19.0415C14.3075 17.3202 16.0289 15.6051 17.744 13.8838C17.8807 13.7471 18.0174 13.6104 18.21 13.5482C18.2908 13.5544 18.3716 13.5544 18.4462 13.5544Z" fill="white"/>
+                        <path d="M27.7422 19.551C27.7422 19.259 27.5061 19.0228 27.214 19.0228L13.7604 19.0228L13.7604 20.0792L27.214 20.0792C27.5061 20.0792 27.7422 19.8431 27.7422 19.551Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
         </section>
 
         <section class="developer__contact">
@@ -433,6 +506,38 @@
     </footer>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <script src="js/bundle.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container.developer__slider', {
+        slidesPerView: 6,
+        spaceBetween: 40,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+
+            608: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            740: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1087: {
+                slidesPerView: 6,
+                spaceBetween: 40,
+            },
+        }
+    });
+</script>
 </body>
 </html>
