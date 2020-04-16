@@ -61,27 +61,27 @@
 
                         <ul class="nav-bar__links-list">
                             <li class="nav-bar__links-item">
-                                <a data-lol class="nav-bar__links"
+                                <a data-scroll-item-btn-1 class="nav-bar__links"
                                    href="#m1">Про магію ліcу</a>
                             </li>
                             <li class="nav-bar__links-item">
-                                <a data-lol class="nav-bar__links"
+                                <a data-scroll-item-btn-2 class="nav-bar__links"
                                    href="#m2">Переваги</a>
                             </li>
                             <li class="nav-bar__links-item">
-                                <a data-lol class="nav-bar__links"
+                                <a data-scroll-item-btn-3 class="nav-bar__links"
                                    href="#m3">Інфраструктура</a>
                             </li>
                             <li class="nav-bar__links-item">
-                                <a data-lol class="nav-bar__links"
+                                <a data-scroll-item-btn-4 class="nav-bar__links"
                                    href="#m4">Умови придбання</a>
                             </li>
                             <li class="nav-bar__links-item">
-                                <a data-lol class="nav-bar__links"
+                                <a data-scroll-item-bt-5 class="nav-bar__links"
                                    href="#m5">Комерційна нерухомість</a>
                             </li>
                             <li class="nav-bar__links-item">
-                                <a data-lol class="nav-bar__links"
+                                <a data-scroll-item-btn-6 class="nav-bar__links"
                                    href="#m6">Контакти</a>
                             </li>
                         </ul>
@@ -266,6 +266,27 @@
                     </ul>
                 </li>
             </ul>
+
+            <div class="language-block language-block--mobile">
+                <label class="language-block__label">
+                    <input type="radio"
+                           class="language-block__input"
+                           checked
+                           name="lang-select"
+                           value="ua">
+
+                    <span class="language-block__text">UA</span>
+                </label>
+
+                <label class="language-block__label">
+                    <input type="radio"
+                           class="language-block__input"
+                           name="lang-select"
+                           value="ru">
+
+                    <span class="language-block__text">RU</span>
+                </label>
+            </div>
         </div>
     </header>
     <main class="content content--main">
@@ -1279,9 +1300,7 @@
 <script src="js/bundle.js"></script>
 
 <script>
-    document.querySelector("[data-head-menu]").addEventListener('click', function () {
-        this.classList.toggle('active');
-    })
+
 </script>
 
 
