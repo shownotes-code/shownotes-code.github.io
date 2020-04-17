@@ -26,6 +26,7 @@
 
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -348,9 +349,14 @@
                             </p>
 
                             <div class="about-main__btn-wrap">
-                                <a class="about-main__btn about-main__btn-link" href="#">
+                                <a data-fancybox data-src="#map-wrap"
+                                   class="about-main__btn about-main__btn-link" href="#">
                                     Панорама
                                 </a>
+
+                                <div style="display: none;" id="map-wrap">
+                                    <p>map wrapper</p>
+                                </div>
 
                                 <a class="about-main__btn about-main__btn-secondary" href="#">
                                     Галерея
@@ -866,8 +872,21 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 <script>
+
+    $('.about-main__btn-secondary').on('click', function (e) {
+        e.preventDefault();
+        $.fancybox.open([
+            {src  : 'images/about-page/ex1.jpg'},
+            {src  : 'images/about-page/ex2.jpg'},
+            {src  : 'images/about-page/ex3.jpg'},
+            {src  : 'images/about-page/ex4.jpg'},
+        ], {
+            loop : true,
+        });
+    });
 
     // const navbarToggler = document.querySelector(".navbar-toggler");
     // const navbarMenu = document.querySelector(".navbar ul");
