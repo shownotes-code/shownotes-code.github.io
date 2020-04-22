@@ -29,23 +29,20 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:image" content="img/@1x/preview.jpg">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../css/main.css">
 
     <style>
-
-
         .swiper-container  {
             width: 100%;
             height: 300px;
             margin-left: auto;
             margin-right: auto;
         }
-
         .gallery-top {
             height: 80%;
             width: 200px;
         }
-
         .gallery-top .swiper-slide {
             background-color: blue;
             color: #fff;
@@ -65,6 +62,32 @@
         }
         .gallery-thumbs .swiper-slide-thumb-active {
             opacity: 1;
+        }
+
+
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
         }
     </style>
 </head>
@@ -554,6 +577,82 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Swiper -->
+                <div class="swiper-container history-v1" style="margin-top: 3rem">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="history__time-line-text-wrap">
+                                <span class="history__time-line-point"></span>
+                                <span class="history__time-line-caption">2014</span>
+                                <p class="history__time-line-text">компанія розпочала свою діяльність</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="content__item card-container card-container--projects-page card-container--about-page">
@@ -942,6 +1041,9 @@
         </div>
     </div>
 </div>
+
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="../js/scripts.min.js"></script>
 
 <script>
@@ -985,6 +1087,16 @@
             $('body').toggleClass('popup-active');
         }
     }
+</script>
+
+<script>
+    var swiper = new Swiper('.swiper-container.history-v1', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        // mousewheel: true,
+        grabCursor: true,
+        centeredSlides: true,
+    });
 </script>
 
 </body>
