@@ -67,8 +67,6 @@
 </head>
 <body>
 
-
-
 <div class="wrapper">
     <header>
         <div class="header__nav-bar">
@@ -274,13 +272,13 @@
             </div>
         </section>
         <section class="staff-detail">
-            <div class="staff-detail__inner">
-                <p class="staff-detail__item">
+            <div>
+                <p>
                     Компания укомплектована власною технікою, та штатом спеціалістів. Структура компанії складається із
                     відділів:
                 </p>
 
-                <ul class="staff-detail__item">
+                <ul>
                     <li>• архітектурний</li>
                     <li>• конструкторський</li>
                     <li>• проектний відділ</li>
@@ -288,12 +286,12 @@
                     <li>• відділ постачаня</li>
                 </ul>
 
-                <p class="staff-detail__item">
+                <p>
                     Крім того, у складі компанії є власна обслуговуюча організація та генпідрядник, який в свою чергу має як
                     технику так і штат будівельників.
                 </p>
 
-                <p class="staff-detail__item">
+                <p>
                     Потреби будівництва забезпеує свій автопарк.
                 </p>
             </div>
@@ -897,9 +895,9 @@
     let popup = document.getElementById('modal-gallery-wrap'),
         popupToggle = document.querySelectorAll('[data-open-gallery-modal]'),
         popupClose = document.querySelectorAll('[data-close-button]');
-        body = document.body;
+    body = document.body;
 
-    popupToggle.forEach (button => {
+    popupToggle.forEach(button => {
         button.addEventListener('click', function () {
             popup.style.display = 'block';
 
@@ -937,7 +935,7 @@
     })
 
     window.onclick = function (e) {
-        if(e.target === popup) {
+        if (e.target === popup) {
             popup.style.display = 'none';
             body.classList.remove('popup-active');
         }
