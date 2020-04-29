@@ -156,8 +156,9 @@
             </nav>
 
             <div class="header__btn-wrap">
-                <button class="header__btn-favorites">
+                <button class="header__btn-favorites active">
                     <span class="icon icon-star-white"></span>
+                    <span class="header__btn-favorites-value">2</span>
                 </button>
 
                 <a class="header__btn-callback" href="#">
@@ -712,6 +713,10 @@
             loop : true,
         });
     });
+
+    $('.header__btn-favorites').click(function () {
+        $(this).toggleClass('active');
+    })
 </script>
 
 
