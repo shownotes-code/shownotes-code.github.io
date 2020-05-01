@@ -717,6 +717,11 @@
     $('.header__btn-favorites').click(function () {
         $(this).toggleClass('active');
     })
+
+
+    $('[data-close-btn]').click(function () {
+        DialogService.Show("confirmation");
+    })
 </script>
 
 
