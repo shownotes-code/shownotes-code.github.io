@@ -4,27 +4,31 @@
         Наш менеджер зв’яжеться з вами і проконсультує з усіх питань
     </p>
 
-    <label class="modal-body__label">
+    <form action="" id="submitFormData">
+        <label class="modal-body__label">
         <span class="modal-body__label-text">
             Номер телефону *
         </span>
-        <input class="modal-body__label-input"
-               type="text"
-               placeholder="+38(___)___-__-__"
-               autocomplete="off">
-    </label>
+            <input class="modal-body__label-input"
+                   type="text"
+                   placeholder="+38(___)___-__-__"
+                   autocomplete="off">
+        </label>
 
-    <label class="modal-body__label">
+        <label class="modal-body__label">
         <span class="modal-body__label-text">
             Коли вам зателефонувати?
         </span>
 
-        <select class="modal-body__label-select" name="" id="">
-            <option value="0">У найближчий час</option>
-        </select>
-    </label>
+            <select class="modal-body__label-select" name="" id="">
+                <option value="0">У найближчий час</option>
+            </select>
+        </label>
 
-    <button data-close-btn class="modal-body__btn">Замовити дзвінок</button>
+        <button type="submit"
+                data-close-btn
+                class="modal-body__btn">Замовити дзвінок</button>
+    </form>
 
     <div class="privacy-policy">
         Натискаючи кнопку “Надіслати” ви даєте згоду на обробку персональних даних згідно з нашою
