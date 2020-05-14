@@ -17223,22 +17223,24 @@ var App = /*#__PURE__*/function () {
         _dialogService.DialogService.Show("confirmation");
       }
 
-      (0, _jquery["default"])(document).on('submit', '#callBack', function () {
-        var str = (0, _jquery["default"])(this).serialize();
-
-        _jquery["default"].ajax({
-          type: "POST",
-          url: "/wp-content/themes/forestTheme/contactPhp/callBack.php",
-          data: str,
-          success: function success(msg) {
-            _dialogService.DialogService.Show("confirmation"); // Здесь закрыть модалку, и открыть спасибо (по возможности почистить поля ввода, чтобы были пустые)
-
-          }
-        });
-
-        return false;
-      });
       (0, _jquery["default"])('#conForm').submit(function () {
+        var number = document.querySelector('.modal-body__label-input').val();
+
+        _utils.Utils.hideErrorForElement(number); // let number = form.phoneInput.val();
+
+
+        if (!_utils.Utils.carrierValid(number)) {
+          _utils.Utils.displayErrorForElement(number, "error.phone.carrier");
+
+          return;
+        }
+
+        if (!_utils.Utils.validatePhoneNumber(number)) {
+          _utils.Utils.displayErrorForElement(number, "error.phone.number");
+
+          return;
+        }
+
         var str = (0, _jquery["default"])(this).serialize();
 
         _jquery["default"].ajax({
@@ -17299,7 +17301,21 @@ var App = /*#__PURE__*/function () {
             return;
           }
 
-          _dialogService.DialogService.Close();
+          (0, _jquery["default"])(document).on('submit', '#callBack', function () {
+            var str = (0, _jquery["default"])(this).serialize();
+
+            _jquery["default"].ajax({
+              type: "POST",
+              url: "/wp-content/themes/forestTheme/contactPhp/callBack.php",
+              data: str,
+              success: function success(msg) {
+                _dialogService.DialogService.Show("confirmation"); // Здесь закрыть модалку, и открыть спасибо (по возможности почистить поля ввода, чтобы были пустые)
+
+              }
+            });
+
+            return false;
+          });
         }
       });
     }
