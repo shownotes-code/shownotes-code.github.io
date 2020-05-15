@@ -17206,10 +17206,7 @@ var App = /*#__PURE__*/function () {
       (0, _jquery["default"])('.content-main-second-block__btn').click(function () {
         (0, _jquery["default"])('.content-main-second-block__aside').toggleClass('active');
         (0, _jquery["default"])('.content-main-second-block__inner').toggleClass('active');
-      }); // $('.modal-body__btn').click(function () {
-      //     DialogService.Show("confirmation");
-      // });
-
+      });
       (0, _jquery["default"])('[data-close-btn]').click(function () {
         closePopup();
         showPopupConfirmation();
@@ -17231,32 +17228,13 @@ var App = /*#__PURE__*/function () {
           url: "/wp-content/themes/forestTheme/contactPhp/callBack.php",
           data: str,
           success: function success(msg) {
-            _dialogService.DialogService.Show("confirmation"); // ()
-            // Здесь закрыть модалку, и открыть спасибо (по возможности почистить поля ввода, чтобы были пустые)
-
+            showPopupConfirmation(); // Здесь закрыть модалку, и открыть спасибо (по возможности почистить поля ввода, чтобы были пустые)
           }
         });
 
         return false;
       });
       (0, _jquery["default"])('#conForm').submit(function () {
-        // let input = document.querySelector('.modal-body__label-input');
-        // Utils.hideErrorForElement(input);
-        // let number = input.val();
-        //
-        // if (!Utils.carrierValid(number)) {
-        //     Utils.displayErrorForElement(input, "error.phone.carrier");
-        //     return;
-        // }
-        //
-        // if (!Utils.validatePhoneNumber(number)) {
-        //     Utils.displayErrorForElement(input, "error.phone.number");
-        //     return;
-        // }
-        subAjaxForm();
-      });
-
-      function subAjaxForm() {
         var str = (0, _jquery["default"])(this).serialize();
 
         _jquery["default"].ajax({
@@ -17264,13 +17242,12 @@ var App = /*#__PURE__*/function () {
           url: "/wp-content/themes/forestTheme/contactPhp/callContacts.php",
           data: str,
           success: function success(msg) {
-            // DialogService.Show("confirmation");
             showPopupConfirmation(); // Здесь открыть модалку спасибо (по возможности почистить поля ввода, чтобы были пустые)
           }
         });
 
         return false;
-      }
+      });
     }
   }, {
     key: "showRequestACall",
@@ -17296,64 +17273,27 @@ var App = /*#__PURE__*/function () {
           var c = _constants.settings.showInterval - m.minute() % _constants.settings.showInterval;
 
           return m.add(c, 'minutes');
-        } // form.submitButton.on('click', function () {
-        //
-        //     Utils.hideErrorForElement(form.phoneInput);
-        //     let number = form.phoneInput.val();
-        //
-        //     if (!Utils.carrierValid(number)) {
-        //         Utils.displayErrorForElement(form.phoneInput, "error.phone.carrier");
-        //         return;
-        //     }
-        //
-        //     if (!Utils.validatePhoneNumber(number)) {
-        //         Utils.displayErrorForElement(form.phoneInput, "error.phone.number");
-        //         return;
-        //     }
-        //
-        //     submitForm();
-        //
-        // });
-        //
-        // function submitForm() {
-        //     var str = $(this).serialize();
-        //     $.ajax({
-        //         type: "POST",
-        //         url: "/wp-content/themes/forestTheme/contactPhp/callBack.php",
-        //         data: str,
-        //         success: function (msg) {
-        //             DialogService.Show("confirmation");
-        //             // Здесь закрыть модалку, и открыть спасибо (по возможности почистить поля ввода, чтобы были пустые)
-        //         }
-        //     });
-        //     return false;
-        // }
-        // form.submitButton.on('click', submitForm);
-        //
-        // function submitForm() {
-        //     Utils.hideErrorForElement(form.phoneInput);
-        //     let number = form.phoneInput.val();
-        //
-        //     if (!Utils.carrierValid(number)) {
-        //         Utils.displayErrorForElement(form.phoneInput, );
-        //         return;
-        //     }
-        //
-        //     if (!Utils.validatePhoneNumber(number)) {
-        //         Utils.displayErrorForElement(form.phoneInput, "error.phone.number");
-        //         return;
-        //     }
-        // function submitForm() {
-        //
-        //     console.log({
-        //         phone: form.phoneInput.val(),
-        //         callbackTime: form.timeSelect.val(),
-        //         requestTime: moment().format()
-        //     });
-        //     DialogService.Show("confirmation");
-        // }
-        // }
+        }
 
+        form.submitButton.on('click', submitForm);
+
+        function submitForm() {
+          _utils.Utils.hideErrorForElement(form.phoneInput);
+
+          var number = form.phoneInput.val();
+
+          if (!_utils.Utils.carrierValid(number)) {
+            _utils.Utils.displayErrorForElement(form.phoneInput, "error.phone.carrier");
+
+            return;
+          }
+
+          if (!_utils.Utils.validatePhoneNumber(number)) {
+            _utils.Utils.displayErrorForElement(form.phoneInput, "error.phone.number");
+
+            return;
+          }
+        }
       });
     }
   }]);
