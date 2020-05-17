@@ -299,7 +299,7 @@
                             <span class="contact__item-text">info@forestpark.com.ua</span>
                         </li>
                     </ul>
-                    <form class="contact__form">
+                    <form class="contact__form" id="conForm">
                         <label class="modal-body__label">
                             <span class="modal-body__label-text">
                                 Номер телефону *
@@ -308,6 +308,8 @@
                                    type="text"
                                    placeholder="+38(___)___-__-__"
                                    autocomplete="off">
+
+                            <span class="js-span-error">Оператор некоректний</span>
                         </label>
                         <label class="modal-body__label">
                             <span class="modal-body__label-text">
@@ -316,7 +318,7 @@
                             <textarea class="contact__textarea"></textarea>
                         </label>
 
-                        <button class="modal-body__btn">Надіслати</button>
+                        <button type="submit" class="modal-body__btn">Надіслати</button>
                     </form>
                 </div>
             </div>
